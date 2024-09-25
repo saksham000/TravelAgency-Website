@@ -21,7 +21,7 @@ root {
 
     /* Font ang Typography */
     --biggestFontSize: 2.5rem;
-    --h1FontSize: 2rem;
+    --h1FontSize: 1.6rem;
     --h2FontSize: 1.25rem;
     --h3FontSize: 1rem;
     --normalFontSize: 0.938rem;
@@ -40,7 +40,7 @@ body{
 }
 
 .grid{
-    display: flex;
+    display: grid;
     align-items: center;
     gap: 1.5rem;
 }

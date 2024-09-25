@@ -6,18 +6,20 @@ import Portfolio from './Component/Portfolio/Portfolio'
 import Reviews from './Component/Reviews/Reviews'
 import Questions from './Component/Questions/Questions'
 import Subscribe from './Component/Subscribe/Subscribe'
+import Middle from './Component/Middle/Middle'
 import Footer from './Component/Footer/Footer'
 function App() {
   return (
     <div>
       <Navbar/>
-      {/* <Home/>
+      <Home/>
+      <Middle/>
       <Destinations/>
       <Portfolio/>
       <Reviews/>
       <Questions/>
       <Subscribe/>
-      <Footer/> */}
+      <Footer/>
     </div>
   )
 }
