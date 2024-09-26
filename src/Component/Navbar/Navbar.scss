@@ -126,13 +126,19 @@
 }
 
 @media screen and (min-width: 1240px) {
-    .navBar{
+    .navBar {
         padding: 2rem 6rem;
-        .menu{
-            ul{
+        .menu {
+            ul {
                 gap: 4rem;
             }
         }
+    }
+}
+
+@media screen and(min-width: 1440px) {
+    .navBar{
+        padding: 2rem 14rem;
     }
     
 }

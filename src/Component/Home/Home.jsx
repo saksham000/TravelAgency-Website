@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { AiOutlineSwapRight } from "react-icons/ai";
+import image1 from "../../Assets/image1.jpg";
 
 import Video from "../../Assets/video.mp4";
 
@@ -24,15 +25,13 @@ function Home() {
         <div className="content">
           <h3>Popular Places</h3>
           <div className="images flex">
-            {/* <img src="" alt="" /> */}
-            {/* <img src="" alt="" /> */}
-            {/* <img src="" alt="" /> */}
-            {/* <img src="" alt="" /> */}
+            <img src={image1} alt="" />
+            <img src={image1} alt="" />
+            <img src={image1} alt="" />
+            <img src={image1} alt="" />
           </div>
         </div>
       </div>
-
-
     </div>
   );
 }
