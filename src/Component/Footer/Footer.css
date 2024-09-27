@@ -29,7 +29,7 @@ root {
   text-align: center;
   align-items: flex-start;
 }
-.footer .secContainer .logoDiv {
+.footer .secContainer .logoDiv .footerLogo {
   display: flex;
   color: var(--blackColor);
   font-weight: 500;
@@ -38,44 +38,64 @@ root {
   justify-content: center;
   padding-bottom: 0.5rem;
 }
-.footer .secContainer .logoDiv .icon {
+.footer .secContainer .logoDiv .footerLogo .icon {
   font-size: 25px;
   color: var(--blackColor);
 }
-.footer .secContainer .socials {
+.footer .secContainer .logoDiv .socials {
   gap: 0.5rem;
   margin: auto;
   align-items: center;
   justify-content: center;
 }
-.footer .secContainer .socials .icon {
+.footer .secContainer .logoDiv .socials .icon {
   font-size: 25px;
   background: var(--primaryColor);
   border-radius: 50%;
   padding: 8px;
   color: var(--whiteColor);
 }
-.footer .secContainer .socials .icon:hover {
+.footer .secContainer .logoDiv .socials .icon:hover {
   background: var(--primaryColorLight);
 }
-.footer .footerLinks {
+.footer .secContainer .footerLinks {
   display: grid;
   row-gap: 0.2rem;
 }
-.footer .footerLinks .linkTitle {
+.footer .secContainer .footerLinks .linkTitle {
   padding-bottom: 0.5rem;
   color: var(--blackColor);
   font-weight: 700;
 }
-.footer .footerLinks li:hover {
+.footer .secContainer .footerLinks li:hover {
   transform: translate(10px);
 }
-.footer .footerLinks li:hover a {
+.footer .secContainer .footerLinks li:hover a {
   -moz-columns: var(--primaryColor);
        columns: var(--primaryColor);
 }
-.footer .footerLinks a, .footer .footerLinks .phone, .footer .footerLinks .email {
+.footer .secContainer .footerLinks a,
+.footer .secContainer .footerLinks .phone,
+.footer .secContainer .footerLinks .email {
   color: var(--blackColor);
   font-size: 13px;
   font-weight: 500;
+}
+
+@media screen and (min-width: 448px) {
+  .footer .secContainer {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: start; /* Changed from 'start' to be more standard */
+    align-items: center;
+  }
+  .footer .secContainer .footerLinks {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 640px) {
+  .footer .secContainer {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem; /* Adjust the gap for larger screens */
+    padding: 2rem 0;
+  }
 }/*# sourceMappingURL=Footer.css.map */
