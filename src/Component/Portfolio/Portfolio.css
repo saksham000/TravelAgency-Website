@@ -30,9 +30,18 @@ root {
 .portifolio .secContainer .leftContent .grid .singlePortifolio .iconDiv img {
   height: 50px;
   width: 50px;
+  border-radius: 0.5rem;
 }
 .portifolio .secContainer .leftContent .grid .singlePortifolio .infor h4 {
   padding-bottom: 0.5rem;
+}
+.portifolio .secContainer .rightContent img {
+  border-radius: 1rem;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition for scale and shadow */
+}
+.portifolio .secContainer .rightContent img:hover {
+  box-shadow: 10px 0 20px rgba(0, 140, 255, 0.5215686275), -10px 0 20px #e100ff;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition for scale and shadow */
 }
 
 @media screen and (min-width: 480px) {

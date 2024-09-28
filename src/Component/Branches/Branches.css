@@ -1,0 +1,101 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  margin-top: -16%;
+  color: #333;
+}
+
+.branchesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.branch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #faf0e6;
+}
+@media (max-width: 768px) {
+  .branch {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.branch .branchImage {
+  flex: 1;
+}
+.branch .branchImage img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+.branch .branchImage img:hover {
+  box-shadow: 5px 0 10px rgba(0, 140, 255, 0.8352941176), -5px 0 10px #e100ff;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+.branch .branchInfo {
+  flex: 2;
+}
+.branch .branchInfo h4 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+.branch .branchInfo p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+.branch .branchInfo .contactInfo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+.branch .branchInfo .contactInfo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.branch .branchInfo .contactInfo ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+.branch .branchInfo .contactInfo ul li svg {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: rgba(0, 123, 255, 0.8666666667);
+}
+.branch .branchInfo .contactInfo a {
+  padding: 5px 10px;
+  background-color: rgba(0, 123, 255, 0.8392156863);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.branch .branchInfo .contactInfo a:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=Branches.css.map */

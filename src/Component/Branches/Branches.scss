@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  margin-top: -16%;
+  color: #333;
+}
+
+.branchesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; // space between branch items
+}
+
+.branch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #faf0e6;
+
+  // For mobile responsiveness
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .branchImage {
+    flex: 1;
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+    }
+  }
+
+  .branchImage img:hover {
+    box-shadow:
+      5px 0 10px #008cffd5,
+      -5px 0 10px #e100ff;
+    transition:
+      transform 0.4s ease-in-out,
+      box-shadow 0.4s ease-in-out;
+  }
+
+  .branchInfo {
+    flex: 2;
+
+    h4 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .contactInfo {
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #333;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 1.1rem;
+          margin-bottom: 15px; // Spacing between each list item
+          color: #555;
+
+          svg {
+            font-size: 1.5rem; // Bigger icon size
+            margin-right: 10px; // Space between icon and text
+            color: #007bffdd; // Icon color
+          }
+        }
+      }
+
+      a {
+        padding: 5px 10px;
+        background-color: #007bffd6;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}

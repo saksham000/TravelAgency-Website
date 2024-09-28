@@ -1,69 +1,73 @@
 import React, { useEffect } from "react";
 import "./Footer.css";
-import { FaOm } from "react-icons/fa";
 import { ImFacebook } from "react-icons/im";
 import { ImTwitter } from "react-icons/im";
 import { AiFillInstagram } from "react-icons/ai";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { GrMail } from "react-icons/gr";
+
 function Footer() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="footer">
-      <div className="secContainer container grid">
-        <div className="logoDiv">
-          <div className="footerLogo" data-aos="fade-up">
-            <FaOm className="icon" />
-            <span>Shri hari om yatra</span>
-          </div>
+    <div>
+      <footer data-aos="fade-up">
+      <div className="container footerContainer">
+        <div className="footer1">
+          <a href="/" className="footerLogo">
+            <h4 data-aos="fade-up">Shri Hari OM Yatra</h4>
+          </a>
+          <p data-aos="fade-up">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur, natus.
+          </p>
         </div>
-        <div className="socials flex" data-aos="fade-up">
-          <ImFacebook className="icon" />
-          <ImTwitter className="icon" />
-          <AiFillInstagram className="icon" />
+
+        <div className="footer2">
+          <h4 data-aos="fade-up">Permalinks</h4>
+          <ul className="permalinks">
+            <li data-aos="fade-up"><a href="/">Home</a></li>
+            <li data-aos="fade-up"><a href="./contact">Contact US</a></li>
+          </ul>
         </div>
-        <div>
-          <div className="footerLinks" data-aos="fade-up">
-            <span className="linkTitle">Information</span>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Explore</a>
-            </li>
-            <li>
-              <a href="#">Travel</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
+
+        <div className="footer3">
+          <ul className="privacy">
+            <li data-aos="fade-up"><a href="#">Privacy Policy</a></li>
+            <li data-aos="fade-up"><a href="#">Terms and Conditions</a></li>
+            <li data-aos="fade-up"><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div className="footer4">
+          <h4 data-aos="fade-up">Contact Us</h4>
+          <div>
+            <p data-aos="fade-up">8360132497</p>
+            <p data-aos="fade-up">xyz@gmail.com</p>
           </div>
 
-          <div className="footerLinks" data-aos="fade-up">
-            <span className="linkTitle">Helpful Links</span>
-            <li>
-              <a href="#">Destination</a>
+          <ul className="footerSocials">
+            <li data-aos="fade-up">
+              <a href="#"><ImFacebook className="icon"/></a>
             </li>
-            <li>
-              <a href="#">Support</a>
+            <li data-aos="fade-up">
+              <a href="#"><GrMail className="icon" /></a>
             </li>
-            <li>
-              <a href="#">travel and conditions</a>
+            <li data-aos="fade-up">
+              <a href="#"><AiFillInstagram className="icon" /></a>
             </li>
-            <li>
-              <a href="#">privecy</a>
+            <li data-aos="fade-up">
+              <a href="#"><ImTwitter className="icon" /></a>
             </li>
-          </div>
-
-          <div className="footerLinks" data-aos="fade-up">
-            <span className="linkTitle">Contact details</span>
-            <span className="phone">9999999999</span>
-            <span className="email">yourmail@gmail.com</span>
-          </div>
+          </ul>
         </div>
       </div>
+      <div className="footerCopyright">
+        <small>copyright &copy; Shri Hari OM Yatra</small>
+      </div>
+    </footer>
     </div>
   );
 }

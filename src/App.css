@@ -6,10 +6,10 @@
   font-family: "Arbutus Slab", serif;
 }
 
-root {
-  --primaryColor: hsl(14, 90%, 53%);
+:root {
+  --primaryColor: #8fbc8f;
   --primaryColorLight: hsl(14, 96%, 91%);
-  --bgColor: hsl(0, 0%, 100%);
+  --bgColor: #fdf5e6;
   --formColor: hsl(20, 42%, 87%);
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(0, 0%, 18%);
@@ -25,6 +25,26 @@ root {
   --smallFontSize: 0.813rem;
   --smallestFontSize: 0.75rem;
   --borderRadius: 3rem;
+  --color-primary: #66cdaa;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #8fbc8f;
+  --footer-color: #f4a460;
+  --color-bg2: #424890;
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+  --transition: all 400ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -63,7 +83,8 @@ li {
   cursor: pointer;
 }
 
-img, video {
+img,
+video {
   height: auto;
   width: 100%;
 }

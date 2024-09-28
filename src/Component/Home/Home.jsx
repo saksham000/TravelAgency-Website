@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import "./Home.css";
 import { AiOutlineSwapRight } from "react-icons/ai";
 import image1 from "../../Assets/image1.jpg";
-
-import Video from "../../Assets/video.mp4";
-
+import Video from "../../Assets/video2.mp4";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -24,7 +22,10 @@ function Home() {
           trip.
         </p>
         <button className="btn flex" data-aos="fade-up">
-          Get STarted <AiOutlineSwapRight className="icon" />
+          <a href="#destination">
+            Get Started
+            <AiOutlineSwapRight className="icon" />
+          </a>
         </button>
       </div>
       <div className="popularPlaces">
@@ -36,6 +37,13 @@ function Home() {
             <img src={image1} alt="" />
             <img src={image1} alt="" />
           </div>
+        </div>
+      </div>
+      <div class="marquee">
+        <div class="marquee-content">
+          <marquee>
+            Get 20% off on your first booking! Book now and enjoy the offer!
+          </marquee>
         </div>
       </div>
     </div>

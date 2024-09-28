@@ -11,7 +11,7 @@ const Questions = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <div className="questions section container">
+    <div id="questions" className="questions section container">
       <div className="secHeading">
         <h3 data-aos="fade-up">Frequwntly asked questions</h3>
       </div>
@@ -51,14 +51,24 @@ const Questions = () => {
             </p>
           </div>
           <div className="formContent grid" data-aos="fade-up">
-            <input type="email" placeholder="enter email" data-aos="fade-up" />
-            <textarea
-              placeholder="enter your question here"
-              data-aos="fade-up"
-            ></textarea>
-            <button className="btn" data-aos="fade-up">
-              Submit
-            </button>
+            <form action="https://formspree.io/f/maygyzre" method="POST">
+              <input
+                type="email"
+                name="Email Address"
+                placeholder="enter email"
+                data-aos="fade-up"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="enter your question here"
+                data-aos="fade-up"
+                required
+              ></textarea>
+              <button className="btn" data-aos="fade-up">
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </div>

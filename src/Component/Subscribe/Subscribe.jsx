@@ -13,11 +13,15 @@ function Subscribe() {
         <img src={image1} alt="Div Image" data-aos="fade-down" />
         <div className="textDiv">
           <h4 data-aos="fade-up">Best way to start your journey !</h4>
-          <p data-aos="fade-up"> 
+          <p data-aos="fade-up">
             we offer personalized intericanoj tailer to idani dnosn
             andannlndalksd
           </p>
-          <button className="btn" data-aos="fade-up">Start Here !</button>
+          <a href="/contact">
+            <button className="btn" data-aos="fade-up">
+              Start Here !
+            </button>
+          </a>
         </div>
       </div>
     </div>

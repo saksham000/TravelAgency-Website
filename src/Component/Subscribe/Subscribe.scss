@@ -38,6 +38,17 @@ root {
             }
         }
     }
+    .secContainer img{
+        transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition for scale and shadow */
+        border-radius: 1rem;
+    }
+    .secContainer img:hover{
+        box-shadow:
+                10px 0 20px #008cff85,
+                -10px 0 20px #e100ff;
+                transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition for scale and shadow */
+
+    }
 }
 
 @media screen and (min-width: 480px) {

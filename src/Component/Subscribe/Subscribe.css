@@ -30,6 +30,14 @@ root {
 .subscribe .secContainer .textDiv .btn {
   padding: 0.5rem 2rem;
 }
+.subscribe .secContainer img {
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition for scale and shadow */
+  border-radius: 1rem;
+}
+.subscribe .secContainer img:hover {
+  box-shadow: 10px 0 20px rgba(0, 140, 255, 0.5215686275), -10px 0 20px #e100ff;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition for scale and shadow */
+}
 
 @media screen and (min-width: 480px) {
   .subscribe .secContainer img {

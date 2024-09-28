@@ -72,6 +72,66 @@ root {
     }
 }
 
+.testimonialsContainer {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.testimonial {
+    padding-top: 2rem;
+}
+
+.avatar {
+    width: 30rem;
+    height: 20rem;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    img {
+        object-fit: cover;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    border: 0.1rem solid var(--color-bg1);
+    box-shadow:
+                10px 0 20px #008cff6c,
+                -10px 0 20px #e100ff52;
+}
+
+.testimonialInfo {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.testimonialBody {
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+    background: var(--formColor);
+
+    p{
+        font-size: 1.3rem;
+    }
+}
+
+.testimonialBody::before {
+    content: "";
+    display: block;
+    background: linear-gradient(
+      135deg,
+      transparent,
+      var(--color-primary),
+      var(--color-primary),
+      var(--color-primary)
+    );
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 48%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+}
+
 @media screen and (min-width: 480px) {
     .review {
         .secContainer {
@@ -144,29 +204,28 @@ root {
     }
 }
 
-@media screen and (min-width: 1240px ) {
-    .review{
-        .secContainer{
+@media screen and (min-width: 1240px) {
+    .review {
+        .secContainer {
             gap: 3rem;
 
-            .textDiv{
-                .redText{
+            .textDiv {
+                .redText {
                     font-size: var(--h3FontSize);
                 }
-                h3{
+                h3 {
                     font-size: var(--h1FontSize);
                     color: var(--blackColor);
                 }
-                p{
+                p {
                     color: var(--blackColor);
                     font-size: var(--h3FontSize);
                     line-height: 2rem;
                 }
             }
-            .imgDiv{
+            .imgDiv {
                 height: 300px;
             }
         }
     }
-
 }

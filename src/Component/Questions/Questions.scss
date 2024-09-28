@@ -87,6 +87,8 @@ root {
                 padding: 1rem;
                 border: none;
                 outline: none;
+                color: var(--blackColor);
+                margin-bottom: 1rem;
                 border-radius: var(--borderRadius);
                 &::placeholder {
                     font-size: var(--smallFontSize);
@@ -96,10 +98,27 @@ root {
             textarea {
                 height: 100px;
                 border-radius: 10px;
+                color: var(--blackColor);
             }
         }
     }
 }
+
+// .questions .form .formContent input,
+// .questions .form .formContent textarea {
+//     background: var(--cardColor);
+//     width: 100%;
+//     padding: 1rem;
+//     border: none;
+//     outline: none;
+//     border-radius: var(--borderRadius);
+//     color: var(--blackColor); /* Ensure text color is black */
+//     &::placeholder {
+//         font-size: var(--smallFontSize);
+//         color: var(--blackColor);
+//     }
+// }
+
 
 @media screen and (min-width: 640px) {
     .accordionContainer {

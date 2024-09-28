@@ -37,6 +37,7 @@ root {
                         img {
                             height: 50px;
                             width: 50px;
+                            border-radius: .5rem;
                         }
                     }
                     .infor {
@@ -47,13 +48,23 @@ root {
                 }
             }
         }
+        .rightContent img{
+            border-radius: 1rem;
+            transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition for scale and shadow */
+        }
+        .rightContent img:hover {
+            box-shadow:
+                10px 0 20px #008cff85,
+                -10px 0 20px #e100ff;
+                transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition for scale and shadow */
+        }
     }
 }
 
 @media screen and (min-width: 480px) {
     .portifolio {
         .secContainer {
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(1, 1fr);
             .leftContent {
                 .secHeading {
                     h3 {
@@ -153,28 +164,26 @@ root {
 }
 
 @media screen and (min-width: 1240px) {
-
-    .portifolio{
-        .secContainer{
+    .portifolio {
+        .secContainer {
             gap: 3rem;
-            .leftContent{
-                .secHeading{
-                    h3{
+            .leftContent {
+                .secHeading {
+                    h3 {
                         font-size: 2rem;
                     }
-                    p{
+                    p {
                         font-size: var(--h3FontSize);
                     }
                 }
-                .grid{
+                .grid {
                     gap: 2.5rem;
                     margin-top: 3rem;
-                    .singlePortifolio{
+                    .singlePortifolio {
                         gap: 2rem;
                     }
                 }
             }
         }
     }
-    
 }

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Anybody:ital,wght@0,100..900;1,100..900&family=Arbutus+Slab&display=swap");
 
 // all project color
-:root {
+root {
     --primaryColor: hsl(14, 90%, 53%);
     --primaryColorLight: hsl(14, 96%, 91%);
     --bgColor: hsl(0, 0%, 100%);
@@ -23,23 +23,40 @@
     --borderRadius: 3rem;
 }
 
+.navList {
+    color: var(--greyText);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navList:hover {
+    color: var(--primaryColor); /* Change color on hover if needed */
+}
+
 .navBar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    height: 9%; // I changed this
     padding: 1.5rem 2rem;
     position: fixed;
     border-bottom: 1.5px solid rgb(231, 231, 231);
     backdrop-filter: blur(5px);
     z-index: 1000;
+    position: fixed;
+    top: 0;
     .logoDiv {
         display: flex;
         align-items: center;
         justify-content: center;
+        // color: var(--blackColor);
+        gap: 0.2rem;
         span {
-            color: var(--blackColor);
+            color: var(--greyText);
             font-size: var(--h3FontSize);
+            font-weight: 500;
             justify-content: center;
         }
     }
@@ -136,7 +153,7 @@
     }
 }
 
-@media screen and(min-width: 1440px) {
+@media screen and (min-width: 1440px) {
     .navBar {
         padding: 2rem 14rem;
     }

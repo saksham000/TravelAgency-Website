@@ -1,25 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Anybody:ital,wght@0,100..900;1,100..900&family=Arbutus+Slab&display=swap");
-root {
-  --primaryColor: hsl(14, 90%, 53%);
-  --primaryColorLight: hsl(14, 96%, 91%);
-  --bgColor: hsl(0, 0%, 100%);
-  --formColor: hsl(20, 42%, 87%);
-  --whiteColor: hsl(0, 0%, 100%);
-  --blackColor: hsl(0, 0%, 18%);
-  --greyText: hsl(0, 0%, 51%);
-  --inputColor: hsl(330, -12%, 97%);
-  --cardColor: hsl(300, 3%, 94%);
-  /* Font ang Typography */
-  --biggestFontSize: 2.5rem;
-  --h1FontSize: 1.6rem;
-  --h2FontSize: 1.25rem;
-  --h3FontSize: 1rem;
-  --normalFontSize: 0.938rem;
-  --smallFontSize: 0.813rem;
-  --smallestFontSize: 0.75rem;
-  --borderRadius: 3rem;
+.destination .secContainer {
+  margin-top: -3rem;
 }
-
 .destination .secContainer .redText {
   color: var(--primaryColor);
   font-size: var(--smallFontSize);
@@ -27,35 +9,6 @@ root {
 }
 .destination .secContainer h3 {
   font-size: var(--h1FontSize);
-}
-.destination .secContainer .searchField {
-  margin-top: 2rem;
-  gap: 1rem;
-}
-.destination .secContainer .searchField .inputField {
-  background: var(--primaryColorLight);
-  padding: 1rem;
-  border-radius: var(--borderRadius);
-  gap: 0.5rem;
-}
-.destination .secContainer .searchField .inputField input {
-  background: transparent;
-  border: none;
-  outline: none;
-  width: 100%;
-}
-.destination .secContainer .searchField .inputField .icon {
-  color: var(--blackColor);
-}
-.destination .secContainer .searchField .btn {
-  gap: 0.5rem;
-  margin: auto;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-.destination .secContainer .secMenu {
-  display: none;
 }
 .destination .secContainer .destinationContainer {
   margin-top: 2rem;
@@ -79,7 +32,7 @@ root {
   transition: all 0.3s ease-in-out;
 }
 .destination .secContainer .destinationContainer .singleDestination:hover .imgDiv img {
-  scale: 1.1;
+  transform: scale(1.1);
 }
 .destination .secContainer .destinationContainer .singleDestination .descInfo {
   position: absolute;
@@ -109,7 +62,8 @@ root {
   padding-bottom: 0.3rem;
   font-weight: var(--h2FontSize);
 }
-.destination .secContainer .destinationContainer .singleDestination .descInfo .text .flex, .destination .secContainer .destinationContainer .singleDestination .descInfo .text .icon {
+.destination .secContainer .destinationContainer .singleDestination .descInfo .text .flex,
+.destination .secContainer .destinationContainer .singleDestination .descInfo .text .icon {
   font-size: var(--normalFontSize);
 }
 .destination .secContainer .destinationContainer .singleDestination .descInfo .rating {
@@ -121,40 +75,14 @@ root {
   font-weight: 600;
   color: var(--whiteColor);
 }
+.destination .secContainer .destinationContainer .singleDestination:hover {
+  box-shadow: 5px 0 10px rgba(0, 140, 255, 0.8352941176), -5px 0 10px #e100ff;
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
 
 @media screen and (min-width: 520px) {
-  .destination .secContainer .searchField {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .destination .secContainer .destinationContainer {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (min-width: 640px) {
-  .destination .secContainer .secMenu {
-    display: block;
-  }
-  .destination .secContainer .secMenu .flex {
-    width: 100%;
-    margin: 2rem auto;
-    justify-content: center;
-    gap: 1rem;
-  }
-  .destination .secContainer .secMenu .flex li {
-    background: transparent;
-    padding: 10px 17px;
-    border-radius: var(--borderRadius);
-    color: var(--blackColor);
-    border: 1.5px dashed transparent;
-    cursor: pointer;
-  }
-  .destination .secContainer .secMenu .flex li:hover {
-    color: var(--primaryColor);
-    border: 1.5px dashed var(--primaryColor);
-  }
-  .destination .secContainer .secMenu .flex .active {
-    color: var(--primaryColor);
-    border: 1.5px dashed var(--primaryColor);
   }
 }
 @media screen and (min-width: 1014px) {
@@ -166,28 +94,6 @@ root {
   }
   .destination .secContainer .secTitle p {
     font-size: var(--h3FontSize);
-  }
-  .destination .secContainer .secMenu .flex {
-    justify-content: left;
-  }
-  .destination .secContainer .secMenu .flex li {
-    background: transparent;
-    padding: 10px 17px;
-    border-radius: var(--borderRadius);
-    color: var(--blackColor);
-    border: 1.5px dashed transparent;
-    cursor: pointer;
-  }
-  .destination .secContainer .secMenu .flex li:hover {
-    color: var(--primaryColor);
-    border: 1.5px dashed var(--primaryColor);
-  }
-  .destination .secContainer .secMenu .flex .active {
-    color: var(--primaryColor);
-    border: 1.5px dashed var(--primaryColor);
-  }
-  .destination .secContainer .searchField {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media screen and (min-width: 1148px) {

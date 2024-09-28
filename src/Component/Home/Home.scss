@@ -23,6 +23,27 @@ root {
     --borderRadius: 3rem;
 }
 
+.marquee {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem; /* Increase font size here */
+    font-weight: 500; 
+    top: 101%;
+}
+
+.marquee-content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+    gap: 1rem; /* match to gap above */
+}
+
 .Home {
     position: relative;
     height: 95vh;
@@ -64,6 +85,10 @@ root {
             padding-left: 2rem;
             padding-right: 2rem;
             font-size: var(--h3FontSize);
+        }
+        .btn a{
+            text-decoration: none;
+            color: var(--blackColor);
         }
     }
 
@@ -129,7 +154,6 @@ root {
     .Home {
         position: relative;
         .sectionText {
-
             h1 {
                 font-size: 3.8rem;
                 font-weight: 900;

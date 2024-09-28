@@ -9,7 +9,7 @@ function Middle() {
   return (
     <div className="middle section">
       <div className="secContainer container">
-        <div className="grid">
+        <div className="grid" data-aos="fade-up">
           <span className="flex" data-aos="fade-up">
             <h1>10</h1>
             <p>World Of Experiences</p>
