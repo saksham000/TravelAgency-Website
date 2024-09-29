@@ -32,7 +32,7 @@ root {
     padding: 0.5rem;
     text-align: center;
     font-size: 1.5rem; /* Increase font size here */
-    font-weight: 500; 
+    font-weight: 500;
     top: 101%;
 }
 
@@ -67,7 +67,7 @@ root {
         height: 100%;
         top: 30%;
         bottom: 50%;
-        color: var(--whiteColor);
+        color: var(--blackColor);
         padding: 0 1.3rem;
 
         h1 {
@@ -86,7 +86,7 @@ root {
             padding-right: 2rem;
             font-size: var(--h3FontSize);
         }
-        .btn a{
+        .btn a {
             text-decoration: none;
             color: var(--blackColor);
         }
@@ -97,6 +97,7 @@ root {
     }
 }
 
+// For bigger than mobile
 @media screen and (min-width: 480px) {
     .Home {
         .sectionText {
@@ -122,6 +123,8 @@ root {
         }
     }
 }
+
+// for tabs
 @media screen and (min-width: 769px) {
     .Home {
         .sectionText {
@@ -150,15 +153,18 @@ root {
     }
 }
 
+// For laptop
 @media screen and (min-width: 1040px) {
     .Home {
         position: relative;
+        margin-top: -1%;
         .sectionText {
             h1 {
                 font-size: 3.8rem;
                 font-weight: 900;
                 max-width: 70%;
                 margin: auto;
+                margin-top: -1%;
             }
         }
 
@@ -174,7 +180,7 @@ root {
 
             .content {
                 h3 {
-                    color: var(--whiteColor);
+                    color: var(--blackColor);
                     padding: 1rem 0;
                     position: relative;
                     &::after {
@@ -197,8 +203,48 @@ root {
                         width: 210px;
                         object-fit: cover;
                         border-radius: 10px;
+                        transition:
+                            transform 0.4s ease-in-out,
+                            box-shadow 0.4s ease-in-out; /* Smooth transition for scale and shadow */
+                    }
+                    :hover {
+                        box-shadow:
+                            10px 0 20px #008cff85,
+                            -10px 0 20px #e100ff;
+                        transition:
+                            transform 0.4s ease-in-out,
+                            box-shadow 0.4s ease-in-out;
                     }
                 }
+            }
+        }
+    }
+}
+
+// This is for Mobile // 459, in my phone 390
+@media screen and (min-width: 390px) and (max-width: 459px) {
+    .Home {
+        // background: #000;
+        margin-top: -17%;
+        .sectionText {
+            padding: 0 2rem;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+
+            h1 {
+                font-size: var(--biggestFontSize);
+                font-weight: 900;
+            }
+            p {
+                padding: 3rem 0;
+                font-size: var(--h2FontSize);
+                max-width: 70%;
+                margin: auto;
+            }
+            .btn {
+                font-size: var(--h3FontSize);
+                margin: auto;
             }
         }
     }

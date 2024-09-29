@@ -3,41 +3,42 @@ import "./Questions.css";
 import Accordion from "./Accordion";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
 const Questions = () => {
   const [active, setActive] = useState(
     "how can i find best destination for me ?"
   );
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
   return (
     <div id="questions" className="questions section container">
       <div className="secHeading">
-        <h3 data-aos="fade-up">Frequwntly asked questions</h3>
+        <h3 data-aos="fade-up">Frequently asked questions</h3>
       </div>
       <div className="secContainer grid">
         <div className="accordion grid" data-aos="fade-up">
           <Accordion
-            title="lorem10 fdsf df sdf ds fsdwefewgsdgdsbfdfgre g efdg fgfdbxb"
-            desc="sdadasd ad ad ad ad  lorem10 dsadas dawd wad awd wad wadwefewfasfasdfewsf"
+            title="What is the best time to book my trip to get the lowest prices?"
+            desc="The best time to book for the lowest prices is typically 6-8 weeks in advance. However, last-minute deals and off-peak seasons can also offer significant savings depending on your destination."
             active={active}
             setActive={setActive}
           />
           <Accordion
-            title="dfsfds f sdf "
-            desc="sdadasd ad ad ad ad  lorem10 dsadas dawd wad awd wad wadwefewfasfasdfewsf"
+            title="Do you offer customized travel packages based on personal preferences?"
+            desc="Yes, we specialize in personalized travel packages. You can share your preferences, such as destinations, activities, and budget, and we'll craft an itinerary tailored just for you."
             active={active}
             setActive={setActive}
           />
           <Accordion
-            title=" df g r fgde gf d2"
-            desc="sdadasd ad ad ad ad  lorem10 dsadas dawd wad awd wad wadwefewfasfasdfewsf"
+            title=" What is your cancellation and refund policy?"
+            desc="Our cancellation and refund policy varies depending on the package and booking terms. We recommend reviewing your specific itinerary for details or contacting our 24/7 Customer Support for assistance."
             active={active}
             setActive={setActive}
           />
           <Accordion
-            title="titrehet er gfj gjf jet le2"
-            desc="sdadasd ad ad ad ad  lorem10 dsadas dawd wad awd wad wadwefewfasfasdfewsf"
+            title="Can you help with visa applications and travel insurance?"
+            desc="Absolutely! We assist with visa applications, ensuring you have the necessary documentation for your trip. We also offer comprehensive travel insurance options to give you peace of mind throughout your journey."
             active={active}
             setActive={setActive}
           />

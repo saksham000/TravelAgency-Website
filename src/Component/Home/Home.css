@@ -63,7 +63,7 @@ root {
   height: 100%;
   top: 30%;
   bottom: 50%;
-  color: var(--whiteColor);
+  color: var(--blackColor);
   padding: 0 1.3rem;
 }
 .Home .sectionText h1 {
@@ -138,12 +138,14 @@ root {
 @media screen and (min-width: 1040px) {
   .Home {
     position: relative;
+    margin-top: -1%;
   }
   .Home .sectionText h1 {
     font-size: 3.8rem;
     font-weight: 900;
     max-width: 70%;
     margin: auto;
+    margin-top: -1%;
   }
   .Home .popularPlaces {
     display: block;
@@ -156,7 +158,7 @@ root {
     justify-content: center;
   }
   .Home .popularPlaces .content h3 {
-    color: var(--whiteColor);
+    color: var(--blackColor);
     padding: 1rem 0;
     position: relative;
   }
@@ -180,5 +182,35 @@ root {
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition for scale and shadow */
+  }
+  .Home .popularPlaces .content .images :hover {
+    box-shadow: 10px 0 20px rgba(0, 140, 255, 0.5215686275), -10px 0 20px #e100ff;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 459px) {
+  .Home {
+    margin-top: -17%;
+  }
+  .Home .sectionText {
+    padding: 0 2rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .Home .sectionText h1 {
+    font-size: var(--biggestFontSize);
+    font-weight: 900;
+  }
+  .Home .sectionText p {
+    padding: 3rem 0;
+    font-size: var(--h2FontSize);
+    max-width: 70%;
+    margin: auto;
+  }
+  .Home .sectionText .btn {
+    font-size: var(--h3FontSize);
+    margin: auto;
   }
 }/*# sourceMappingURL=Home.css.map */

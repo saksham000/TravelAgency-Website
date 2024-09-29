@@ -9,7 +9,7 @@ import { GrMail } from "react-icons/gr";
 
 function Footer() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
   return (
     <div>
@@ -17,7 +17,7 @@ function Footer() {
       <div className="container footerContainer">
         <div className="footer1">
           <a href="/" className="footerLogo">
-            <h4 data-aos="fade-up">Shri Hari OM Yatra</h4>
+            <h4 data-aos="fade-up">Shri Hari Om Yatra</h4>
           </a>
           <p data-aos="fade-up">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -65,7 +65,7 @@ function Footer() {
         </div>
       </div>
       <div className="footerCopyright">
-        <small>copyright &copy; Shri Hari OM Yatra</small>
+        <small>copyright &copy; Shri Hari Om Yatra</small>
       </div>
     </footer>
     </div>

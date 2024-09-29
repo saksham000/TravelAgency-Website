@@ -36,7 +36,7 @@ root {
             cursor: pointer;
             .icon {
                 font-size: 1.2rem;
-                color: var(--blackColor);
+                color: rgba(170, 130, 51, 0.756);
             }
         }
     }
@@ -104,22 +104,6 @@ root {
     }
 }
 
-// .questions .form .formContent input,
-// .questions .form .formContent textarea {
-//     background: var(--cardColor);
-//     width: 100%;
-//     padding: 1rem;
-//     border: none;
-//     outline: none;
-//     border-radius: var(--borderRadius);
-//     color: var(--blackColor); /* Ensure text color is black */
-//     &::placeholder {
-//         font-size: var(--smallFontSize);
-//         color: var(--blackColor);
-//     }
-// }
-
-
 @media screen and (min-width: 640px) {
     .accordionContainer {
         .title {
@@ -183,24 +167,25 @@ root {
                 }
             }
         }
-        .description{
+        .description {
             font-size: var(--normalFontSize);
         }
-        .show{
+        .show {
             height: 150px;
         }
     }
-    .questions{
-        .secHeading{
-            h3, h4{
+    .questions {
+        .secHeading {
+            h3,
+            h4 {
                 font-size: 1.5rem;
             }
 
-            p{
+            p {
                 font-size: var(--h3FontSize);
             }
         }
-        .secContainer{
+        .secContainer {
             gap: 3rem;
         }
     }

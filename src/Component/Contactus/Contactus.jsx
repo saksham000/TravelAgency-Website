@@ -12,7 +12,7 @@ import { GrMail } from "react-icons/gr";
 
 function Contactus() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
   return (
     <div className=" container contact section" data-aos="fade-up">
@@ -94,9 +94,8 @@ function Contactus() {
               placeholder="Message"
             ></textarea>
             <div>
-              <button className="button-86" type="submit">
+              <button className="button-85" type="submit">
                 <span className="default">Send</span>
-                <span className="success">Sent!</span>
                 <div className="left"></div>
                 <div className="right"></div>
               </button>

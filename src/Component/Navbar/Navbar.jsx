@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { FaRegRegistered } from "react-icons/fa6";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { PiDotsNineBold } from "react-icons/pi";
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   // state to track and update navar
@@ -25,7 +25,7 @@ function Navbar() {
           <span>Shri Hari Om Yatra</span>
         </a>
 
-        <FaRegRegistered className="icon" />
+        <FaRegRegistered className="icon smallIcon" />
       </div>
       <div className={navBar}>
         <ul>

@@ -4,7 +4,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 function Middle() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
   return (
     <div className="middle section">
@@ -19,11 +19,11 @@ function Middle() {
             <p>Fine Destinations</p>
           </span>
           <span className="flex" data-aos="fade-up">
-            <h1>10K+</h1>
+            <h1>2K+</h1>
             <p>Customer Reviews</p>
           </span>
           <span className="flex" data-aos="fade-up">
-            <h1>4.8</h1>
+            <h1>4.5</h1>
             <p>Overall Rateing</p>
           </span>
         </div>

@@ -33,7 +33,7 @@ root {
 }
 .accordionContainer .title span .icon {
   font-size: 1.2rem;
-  color: var(--blackColor);
+  color: rgba(170, 130, 51, 0.756);
 }
 .accordionContainer .description {
   font-size: var(--smallFontSize);
@@ -152,7 +152,8 @@ root {
   .accordionContainer .show {
     height: 150px;
   }
-  .questions .secHeading h3, .questions .secHeading h4 {
+  .questions .secHeading h3,
+  .questions .secHeading h4 {
     font-size: 1.5rem;
   }
   .questions .secHeading p {
