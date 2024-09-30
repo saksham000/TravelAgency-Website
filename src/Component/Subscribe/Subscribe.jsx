@@ -5,7 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 function Subscribe() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
   return (
     <div className="subscribe section container">

@@ -23,46 +23,46 @@ root {
     --borderRadius: 3rem;
 }
 
-.accordionContainer {
-    .title {
-        font-size: var(--normalFontSize);
-        align-items: center;
-        padding: 1rem;
-        border-radius: 10px;
-        justify-content: space-between;
-        background: var(--primaryColorLight);
+// .accordionContainer {
+//     .title {
+//         font-size: var(--normalFontSize);
+//         align-items: center;
+//         padding: 1rem;
+//         border-radius: 10px;
+//         justify-content: space-between;
+//         background: var(--primaryColorLight);
 
-        span {
-            cursor: pointer;
-            .icon {
-                font-size: 1.2rem;
-                color: var(--blackColor);
-            }
-        }
-    }
-    .description {
-        font-size: var(--smallFontSize);
-        display: flex;
-        align-items: center;
-        line-height: 20px;
-        white-space: pre-line;
-        height: 0;
-        transition: all 0.3s ease-in-out;
-        opacity: 0;
-        padding: 0 1rem;
-        background: var(--cardColor);
-        border-radius: 0 0 10px 10px;
-        color: var(--blackColor);
-    }
-    .show {
-        height: 140px;
-        opacity: 1;
-    }
-    .activeTitle {
-        background: var(--primaryColorLight);
-        border-radius: 10px 10px 0 0;
-    }
-}
+//         span {
+//             cursor: pointer;
+//             .icon {
+//                 font-size: 1.2rem;
+//                 color: rgba(170, 130, 51, 0.756);
+//             }
+//         }
+//     }
+//     .description {
+//         font-size: var(--smallFontSize);
+//         display: flex;
+//         align-items: center;
+//         line-height: 20px;
+//         white-space: pre-line;
+//         height: 0;
+//         transition: all 0.3s ease-in-out;
+//         opacity: 0;
+//         padding: 0 1rem;
+//         background: var(--cardColor);
+//         border-radius: 0 0 10px 10px;
+//         color: var(--blackColor);
+//     }
+//     .show {
+//         height: 140px;
+//         opacity: 1;
+//     }
+//     .activeTitle {
+//         background: var(--primaryColorLight);
+//         border-radius: 10px 10px 0 0;
+//     }
+// }
 
 .questions {
     .secHeading {
@@ -104,41 +104,29 @@ root {
     }
 }
 
-// .questions .form .formContent input,
-// .questions .form .formContent textarea {
-//     background: var(--cardColor);
-//     width: 100%;
-//     padding: 1rem;
-//     border: none;
-//     outline: none;
-//     border-radius: var(--borderRadius);
-//     color: var(--blackColor); /* Ensure text color is black */
-//     &::placeholder {
-//         font-size: var(--smallFontSize);
-//         color: var(--blackColor);
-//     }
-// }
-
-
 @media screen and (min-width: 640px) {
-    .accordionContainer {
-        .title {
-            font-size: var(--h3FontSize);
+    // .accordionContainer {
+    //     .title {
+    //         font-size: var(--h3FontSize);
 
-            span {
-                .icon {
-                    font-size: 1.5rem;
-                }
-            }
-        }
-        .description {
-            font-size: var(--normalFontSize);
-        }
-        .show {
-            height: 150px;
-        }
-    }
+    //         span {
+    //             .icon {
+    //                 font-size: 1.5rem;
+    //             }
+    //         }
+    //     }
+    //     .description {
+    //         font-size: var(--normalFontSize);
+    //     }
+    //     .show {
+    //         height: 150px;
+    //     }
+    // }
     .questions {
+        img {
+            height: 25rem;
+            // width: 60rem;
+        }
         .secHeading {
             h3,
             h4 {
@@ -173,34 +161,35 @@ root {
 }
 
 @media screen and (min-width: 1024px) {
-    .accordionContainer {
-        .title {
-            font-size: var(--h3FontSize);
+    // .accordionContainer {
+    //     .title {
+    //         font-size: var(--h3FontSize);
 
-            h3 {
-                .icon {
-                    font-size: 1.5rem;
-                }
-            }
-        }
-        .description{
-            font-size: var(--normalFontSize);
-        }
-        .show{
-            height: 150px;
-        }
-    }
-    .questions{
-        .secHeading{
-            h3, h4{
+    //         h3 {
+    //             .icon {
+    //                 font-size: 1.5rem;
+    //             }
+    //         }
+    //     }
+    //     .description {
+    //         font-size: var(--normalFontSize);
+    //     }
+    //     .show {
+    //         height: 150px;
+    //     }
+    // }
+    .questions {
+        .secHeading {
+            h3,
+            h4 {
                 font-size: 1.5rem;
             }
 
-            p{
+            p {
                 font-size: var(--h3FontSize);
             }
         }
-        .secContainer{
+        .secContainer {
             gap: 3rem;
         }
     }

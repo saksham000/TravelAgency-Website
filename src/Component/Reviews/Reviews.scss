@@ -94,8 +94,8 @@ root {
     }
     border: 0.1rem solid var(--color-bg1);
     box-shadow:
-                10px 0 20px #008cff6c,
-                -10px 0 20px #e100ff52;
+        10px 0 20px #008cff6c,
+        -10px 0 20px #e100ff52;
 }
 
 .testimonialInfo {
@@ -109,7 +109,7 @@ root {
     position: relative;
     background: var(--formColor);
 
-    p{
+    p {
         font-size: 1.3rem;
     }
 }
@@ -117,13 +117,7 @@ root {
 .testimonialBody::before {
     content: "";
     display: block;
-    background: linear-gradient(
-      135deg,
-      transparent,
-      var(--color-primary),
-      var(--color-primary),
-      var(--color-primary)
-    );
+    background: linear-gradient(135deg, transparent, var(--color-primary), var(--color-primary), var(--color-primary));
     width: 3rem;
     height: 3rem;
     position: absolute;

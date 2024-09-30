@@ -9,7 +9,7 @@ import { GrMail } from "react-icons/gr";
 
 function Branches() {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 1000 });
   }, []);
   return (
     <div id="branches" className="container section branches">

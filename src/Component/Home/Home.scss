@@ -23,6 +23,37 @@ root {
     --borderRadius: 3rem;
 }
 
+// swiper
+// .autoplay-progress {
+//     position: absolute;
+//     right: 16px;
+//     bottom: 16px;
+//     z-index: 10;
+//     width: 48px;
+//     height: 48px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     font-weight: bold;
+//     color: var(--swiper-theme-color);
+//   }
+
+//   .autoplay-progress svg {
+//     --progress: 0;
+//     position: absolute;
+//     left: 0;
+//     top: 0px;
+//     z-index: 10;
+//     width: 100%;
+//     height: 100%;
+//     stroke-width: 4px;
+//     stroke: var(--swiper-theme-color);
+//     fill: none;
+//     stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+//     stroke-dasharray: 125.6;
+//     transform: rotate(-90deg);
+//   }
+
 .marquee {
     position: absolute;
     width: 100%;
@@ -32,7 +63,7 @@ root {
     padding: 0.5rem;
     text-align: center;
     font-size: 1.5rem; /* Increase font size here */
-    font-weight: 500; 
+    font-weight: 500;
     top: 101%;
 }
 
@@ -50,12 +81,13 @@ root {
     width: 100%;
     top: 0;
 
-    .videoBg {
+    .imgBg {
         position: absolute;
-        height: 100%;
+        height: 95vh;
         width: 100%;
+        z-index: -1;
 
-        video {
+        img {
             height: 100%;
             width: 100%;
             object-fit: cover;
@@ -67,7 +99,7 @@ root {
         height: 100%;
         top: 30%;
         bottom: 50%;
-        color: var(--whiteColor);
+        color: var(--primaryColorLight);
         padding: 0 1.3rem;
 
         h1 {
@@ -79,6 +111,7 @@ root {
             padding: 1rem 0;
             font-size: var(--normalFontSize);
             font-weight: 500;
+            color: var(--primaryColorLight);
         }
         .btn {
             gap: 0.5rem;
@@ -86,7 +119,7 @@ root {
             padding-right: 2rem;
             font-size: var(--h3FontSize);
         }
-        .btn a{
+        .btn a {
             text-decoration: none;
             color: var(--blackColor);
         }
@@ -97,8 +130,10 @@ root {
     }
 }
 
+// For bigger than mobile
 @media screen and (min-width: 480px) {
     .Home {
+        // background: #000;
         .sectionText {
             padding: 0 2rem;
             justify-content: center;
@@ -122,6 +157,8 @@ root {
         }
     }
 }
+
+// for tabs
 @media screen and (min-width: 769px) {
     .Home {
         .sectionText {
@@ -150,15 +187,20 @@ root {
     }
 }
 
+// For laptop
 @media screen and (min-width: 1040px) {
     .Home {
         position: relative;
+        // background: #000;
+        // margin-top: -1%;
         .sectionText {
             h1 {
                 font-size: 3.8rem;
                 font-weight: 900;
                 max-width: 70%;
                 margin: auto;
+                color: var(--primaryColorLight);
+                margin-top: -1%;
             }
         }
 
@@ -174,14 +216,14 @@ root {
 
             .content {
                 h3 {
-                    color: var(--whiteColor);
+                    color: var(--primaryColorLight);
                     padding: 1rem 0;
                     position: relative;
                     &::after {
                         content: "";
                         width: 83%;
                         height: 2px;
-                        background: rgb(202, 202, 202);
+                        background: var(--primaryColorLight);
                         right: 0;
                         bottom: 50%;
                         position: absolute;
@@ -197,8 +239,52 @@ root {
                         width: 210px;
                         object-fit: cover;
                         border-radius: 10px;
+                        transition:
+                            transform 0.4s ease-in-out,
+                            box-shadow 0.4s ease-in-out; /* Smooth transition for scale and shadow */
+                    }
+                    :hover {
+                        box-shadow:
+                            10px 0 20px #008cff85,
+                            -10px 0 20px #e100ff;
+                        transition:
+                            transform 0.4s ease-in-out,
+                            box-shadow 0.4s ease-in-out;
                     }
                 }
+            }
+        }
+    }
+}
+
+// This is for Mobile // 459, in my phone 390
+@media screen and (min-width: 390px) and (max-width: 459px) {
+    .Home {
+        margin-top: -17%;
+
+        .imgBg img {
+            z-index: -1;
+            height: 100%;
+        }
+        .sectionText {
+            padding: 0 2rem;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+
+            h1 {
+                font-size: var(--biggestFontSize);
+                font-weight: 900;
+            }
+            p {
+                padding: 3rem 0;
+                font-size: var(--h2FontSize);
+                max-width: 70%;
+                margin: auto;
+            }
+            .btn {
+                font-size: var(--h3FontSize);
+                margin: auto;
             }
         }
     }

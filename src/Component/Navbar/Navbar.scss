@@ -8,7 +8,7 @@ root {
     --formColor: hsl(20, 42%, 87%);
     --whiteColor: hsl(0, 0%, 100%);
     --blackColor: hsl(0, 0%, 18%);
-    --greyText: hsl(0, 0%, 51%);
+    --greyText: #696262d5;
     --inputColor: hsl(330, -12%, 97%);
     --cardColor: hsl(300, 3%, 94%);
 
@@ -24,14 +24,19 @@ root {
 }
 
 .navList {
-    color: var(--greyText);
+    color: var(--primaryColorLight);
     font-weight: 500;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .navList:hover {
     color: var(--primaryColor); /* Change color on hover if needed */
+}
+
+.smallIcon {
+    color: var(--blackColor);
+    font-size: 0.6rem;
 }
 
 .navBar {
@@ -43,55 +48,28 @@ root {
     padding: 1.5rem 2rem;
     position: fixed;
     border-bottom: 1.5px solid rgb(231, 231, 231);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     z-index: 1000;
-    position: fixed;
+    // position: fixed;
+    transition: background-color 0.3s ease-in-out;
     top: 0;
     .logoDiv {
         display: flex;
         align-items: center;
         justify-content: center;
-        // color: var(--blackColor);
         gap: 0.2rem;
         span {
-            color: var(--greyText);
+            color: var(--primaryColorLight);
+
             font-size: var(--h3FontSize);
             font-weight: 500;
             justify-content: center;
         }
     }
-    @media screen and (max-width: 767px) {
-        .menu {
-            position: absolute;
-            width: 70%;
-            top: -100rem;
-            right: 50%;
-            left: 50%;
-            transform: translate(-50%);
-            background: rgba(255, 255, 255, 0.94);
-            padding: 2rem;
-            border-radius: 10px;
-            transition: 0.8s ease-in-out;
-            backdrop-filter: blur(5px);
-            box-shadow: 0 2px 3px 4px rgba(236, 213, 213, 0.516);
-        }
-
-        li {
-            font-size: var(--h3FontSize);
-            font-weight: 500;
-            padding: 1rem 0;
-            text-align: center;
-            cursor: pointer;
-            &:hover {
-                color: var(--primaryColor);
-                border-bottom: 1.5px solid var(--primaryColor);
-            }
-        }
-    }
 
     .menuIcon,
     .closeIcon {
-        font-size: var(--h1FontSize);
+        font-size: 2rem;
         &:hover {
             color: var(--primaryColor);
         }
@@ -101,16 +79,60 @@ root {
         bottom: -15px;
         right: 50%;
         left: 50%;
-        color: var(--blackColor);
+        font-size: 3rem;
+        color: var(--primaryColorLight);
         transform: translate(-50%);
     }
     .showNavbar {
         top: 8rem;
     }
 }
+@media screen and (max-width: 767px) {
+    .navBar {
+        .logoDiv {
+            span {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .menu {
+        position: absolute;
+        top: -100rem;
+        right: 50%;
+        left: 50%;
+        height: 35rem;
+        width: 25rem;
+        transform: translate(-50%);
+        background: var(--blackColor); //696262d5
+        padding: 2rem;
+        padding-top: 7rem;
+        border-radius: 10px;
+        transition: 0.8s ease-in-out;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 3px 4px rgba(236, 213, 213, 0.516);
+    }
+    .socialIcons a {
+        padding: 1rem;
+    }
+
+    li {
+        font-size: var(--h3FontSize);
+        font-weight: 500;
+        padding: 1.7rem 0;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+            color: var(--primaryColor);
+            border-bottom: 1.5px solid var(--primaryColor);
+        }
+    }
+}
 
 @media screen and (min-width: 768px) {
     .navBar {
+        .socialIcons {
+            display: none;
+        }
         .logoDiv {
             span {
                 font-size: var(--h2FontSize);
@@ -144,7 +166,15 @@ root {
 
 @media screen and (min-width: 1240px) {
     .navBar {
+        .socialIcons {
+            display: none;
+        }
         padding: 2rem 6rem;
+        .logoDiv {
+            span {
+                font-size: 1.4rem;
+            }
+        }
         .menu {
             ul {
                 gap: 4rem;
@@ -156,5 +186,20 @@ root {
 @media screen and (min-width: 1440px) {
     .navBar {
         padding: 2rem 14rem;
+        .logoDiv {
+            span {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 459px) {
+    .navBar {
+        .logoDiv {
+            span {
+                font-size: 1.2rem;
+            }
+        }
     }
 }

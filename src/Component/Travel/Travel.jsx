@@ -10,7 +10,7 @@ function Travel() {
   return (
     <div>
       <BrowserRouter>
-      <Navbar/>
+        <Navbar />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/contact" element={<Contactus />} />

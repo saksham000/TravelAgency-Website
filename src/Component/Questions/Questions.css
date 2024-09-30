@@ -20,44 +20,6 @@ root {
   --borderRadius: 3rem;
 }
 
-.accordionContainer .title {
-  font-size: var(--normalFontSize);
-  align-items: center;
-  padding: 1rem;
-  border-radius: 10px;
-  justify-content: space-between;
-  background: var(--primaryColorLight);
-}
-.accordionContainer .title span {
-  cursor: pointer;
-}
-.accordionContainer .title span .icon {
-  font-size: 1.2rem;
-  color: var(--blackColor);
-}
-.accordionContainer .description {
-  font-size: var(--smallFontSize);
-  display: flex;
-  align-items: center;
-  line-height: 20px;
-  white-space: pre-line;
-  height: 0;
-  transition: all 0.3s ease-in-out;
-  opacity: 0;
-  padding: 0 1rem;
-  background: var(--cardColor);
-  border-radius: 0 0 10px 10px;
-  color: var(--blackColor);
-}
-.accordionContainer .show {
-  height: 140px;
-  opacity: 1;
-}
-.accordionContainer .activeTitle {
-  background: var(--primaryColorLight);
-  border-radius: 10px 10px 0 0;
-}
-
 .questions .secHeading h3,
 .questions .secHeading h4 {
   padding-bottom: 1.5rem;
@@ -97,17 +59,8 @@ root {
 }
 
 @media screen and (min-width: 640px) {
-  .accordionContainer .title {
-    font-size: var(--h3FontSize);
-  }
-  .accordionContainer .title span .icon {
-    font-size: 1.5rem;
-  }
-  .accordionContainer .description {
-    font-size: var(--normalFontSize);
-  }
-  .accordionContainer .show {
-    height: 150px;
+  .questions img {
+    height: 25rem;
   }
   .questions .secHeading h3,
   .questions .secHeading h4 {
@@ -140,19 +93,8 @@ root {
   }
 }
 @media screen and (min-width: 1024px) {
-  .accordionContainer .title {
-    font-size: var(--h3FontSize);
-  }
-  .accordionContainer .title h3 .icon {
-    font-size: 1.5rem;
-  }
-  .accordionContainer .description {
-    font-size: var(--normalFontSize);
-  }
-  .accordionContainer .show {
-    height: 150px;
-  }
-  .questions .secHeading h3, .questions .secHeading h4 {
+  .questions .secHeading h3,
+  .questions .secHeading h4 {
     font-size: 1.5rem;
   }
   .questions .secHeading p {

@@ -47,12 +47,13 @@ root {
   width: 100%;
   top: 0;
 }
-.Home .videoBg {
+.Home .imgBg {
   position: absolute;
-  height: 100%;
+  height: 95vh;
   width: 100%;
+  z-index: -1;
 }
-.Home .videoBg video {
+.Home .imgBg img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -63,7 +64,7 @@ root {
   height: 100%;
   top: 30%;
   bottom: 50%;
-  color: var(--whiteColor);
+  color: var(--primaryColorLight);
   padding: 0 1.3rem;
 }
 .Home .sectionText h1 {
@@ -74,6 +75,7 @@ root {
   padding: 1rem 0;
   font-size: var(--normalFontSize);
   font-weight: 500;
+  color: var(--primaryColorLight);
 }
 .Home .sectionText .btn {
   gap: 0.5rem;
@@ -144,6 +146,8 @@ root {
     font-weight: 900;
     max-width: 70%;
     margin: auto;
+    color: var(--primaryColorLight);
+    margin-top: -1%;
   }
   .Home .popularPlaces {
     display: block;
@@ -156,7 +160,7 @@ root {
     justify-content: center;
   }
   .Home .popularPlaces .content h3 {
-    color: var(--whiteColor);
+    color: var(--primaryColorLight);
     padding: 1rem 0;
     position: relative;
   }
@@ -164,7 +168,7 @@ root {
     content: "";
     width: 83%;
     height: 2px;
-    background: rgb(202, 202, 202);
+    background: var(--primaryColorLight);
     right: 0;
     bottom: 50%;
     position: absolute;
@@ -180,5 +184,39 @@ root {
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Smooth transition for scale and shadow */
+  }
+  .Home .popularPlaces .content .images :hover {
+    box-shadow: 10px 0 20px rgba(0, 140, 255, 0.5215686275), -10px 0 20px #e100ff;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 459px) {
+  .Home {
+    margin-top: -17%;
+  }
+  .Home .imgBg img {
+    z-index: -1;
+    height: 100%;
+  }
+  .Home .sectionText {
+    padding: 0 2rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .Home .sectionText h1 {
+    font-size: var(--biggestFontSize);
+    font-weight: 900;
+  }
+  .Home .sectionText p {
+    padding: 3rem 0;
+    font-size: var(--h2FontSize);
+    max-width: 70%;
+    margin: auto;
+  }
+  .Home .sectionText .btn {
+    font-size: var(--h3FontSize);
+    margin: auto;
   }
 }/*# sourceMappingURL=Home.css.map */
