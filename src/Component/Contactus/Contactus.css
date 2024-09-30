@@ -129,7 +129,8 @@ textarea {
   width: 100%;
   padding: 1rem;
   background: var(--formColor);
-  color: var(--color-white);
+  color: var(--blackColor);
+  border-radius: 0.5rem;
   border: none;
 }
 
@@ -284,6 +285,7 @@ textarea {
   input,
   textarea {
     padding: 0.8rem;
+    color: var(--blackColor);
   }
   .button-86 {
     width: 90px;

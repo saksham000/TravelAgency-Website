@@ -85,8 +85,9 @@ function Destinations() {
           target="_blank"
           title="Call Now"
         >
-          <i><FaPhone className="icon" /></i>
-          
+          <i>
+            <FaPhone className="icon" />
+          </i>
         </a>
         <div className="secTitle">
           <span className="redText" data-aos="fade-up">

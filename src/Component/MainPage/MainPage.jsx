@@ -10,13 +10,12 @@ import Branches from "../Branches/Branches";
 
 function MainPage() {
   return (
-    
     <div>
       <Home />
       <Middle />
       <Destinations />
       <Portfolio />
-      <Branches/>
+      <Branches />
       <Reviews />
       <Questions />
       <Subscribe />

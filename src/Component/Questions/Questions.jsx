@@ -1,23 +1,81 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Questions.css";
-import Accordion from "./Accordion";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import image1 from "../../Assets/question.png";
 
+// react tostify
+import { Bounce, ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Questions = () => {
-  const [active, setActive] = useState(
-    "how can i find best destination for me ?"
-  );
+  const formRef = useRef(null);
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          // If the submission is successful, reset the form
+          form.reset();
+          toast.success("Form Submitted !", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+          });
+        } else {
+          toast.warn("Please Try Again !", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+            transition: Bounce,
+          });
+        }
+      })
+      .catch(() => {
+        toast.error("Server Error !", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+          transition: Bounce,
+        });
+      });
+  };
+
   return (
     <div id="questions" className="questions section container">
       <div className="secHeading">
-        <h3 data-aos="fade-up">Frequently asked questions</h3>
+        {/* <h3 data-aos="fade-up">Frequently asked questions</h3> */}
       </div>
       <div className="secContainer grid">
-        <div className="accordion grid" data-aos="fade-up">
+        <img src={image1} data-aos="fade-down" className="icon" />
+        {/* <div className="accordion grid" data-aos="fade-up">
           <Accordion
             title="What is the best time to book my trip to get the lowest prices?"
             desc="The best time to book for the lowest prices is typically 6-8 weeks in advance. However, last-minute deals and off-peak seasons can also offer significant savings depending on your destination."
@@ -42,7 +100,7 @@ const Questions = () => {
             active={active}
             setActive={setActive}
           />
-        </div>
+        </div> */}
         <div className="form">
           <div className="secHeading" data-aos="fade-up">
             <h4 data-aos="fade-up">Do you have any specific question ?</h4>
@@ -52,7 +110,12 @@ const Questions = () => {
             </p>
           </div>
           <div className="formContent grid" data-aos="fade-up">
-            <form action="https://formspree.io/f/maygyzre" method="POST">
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              action="https://formspree.io/f/maygyzre"
+              method="POST"
+            >
               <input
                 type="email"
                 name="Email Address"
@@ -73,6 +136,7 @@ const Questions = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
