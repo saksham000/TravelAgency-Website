@@ -3,7 +3,7 @@ import "./Portfolio.css";
 import saftey from "../../Assets/saftey.png";
 import destination from "../../Assets/destination.png";
 import support from "../../Assets/support.png";
-import image1 from "../../Assets/image1.jpg";
+import image1 from "../../Assets/abt.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

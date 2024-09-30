@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import "./Reviews.css";
-import { AiFillStar } from "react-icons/ai";
 import image1 from "../../Assets/image1.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";

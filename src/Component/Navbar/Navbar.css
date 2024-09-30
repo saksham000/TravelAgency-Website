@@ -21,10 +21,10 @@ root {
 }
 
 .navList {
-  color: var(--greyText);
+  color: var(--blackColor);
   font-weight: 500;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .navList:hover {
@@ -33,7 +33,7 @@ root {
 
 .smallIcon {
   color: var(--blackColor);
-  font-size: 1rem;
+  font-size: 0.6rem;
 }
 
 .navBar {
@@ -58,7 +58,7 @@ root {
   gap: 0.2rem;
 }
 .navBar .logoDiv span {
-  color: var(--greyText);
+  color: var(--blackColor);
   font-size: var(--h3FontSize);
   font-weight: 500;
   justify-content: center;
@@ -139,6 +139,9 @@ root {
   .navBar {
     padding: 2rem 6rem;
   }
+  .navBar .logoDiv span {
+    font-size: 1.4rem;
+  }
   .navBar .menu ul {
     gap: 4rem;
   }
@@ -146,5 +149,8 @@ root {
 @media screen and (min-width: 1440px) {
   .navBar {
     padding: 2rem 14rem;
+  }
+  .navBar .logoDiv span {
+    font-size: 1.4rem;
   }
 }/*# sourceMappingURL=Navbar.css.map */

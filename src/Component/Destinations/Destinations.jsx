@@ -3,63 +3,71 @@ import "./Destinations.css";
 import { TiLocation } from "react-icons/ti";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import image1 from "../../Assets/image1.jpg";
+import adventure from "../../Assets/popularPackages/adventure.jpg";
+import beach from "../../Assets/popularPackages/beach.jpg";
+import family_trip from "../../Assets/popularPackages/family_trip.jpg";
+import kashmir from "../../Assets/popularPackages/kashmir..jpg";
+import Leh from "../../Assets/popularPackages/Leh.jpg";
+import kerala from "../../Assets/popularPackages/kerala.png";
+import Char_dham from "../../Assets/popularPackages/Char_dham.png";
+import heli from "../../Assets/popularPackages/heli.png";
+import { FaPhone } from "react-icons/fa6";
 
 const destinations = [
   {
     id: 1,
-    img: image1,
-    name: "Ice Island",
-    location: "Indian Ocean",
+    img: adventure,
+    name: "Adventure Tour",
+    location: "USA",
     rating: 4.7,
   },
   {
     id: 2,
-    img: image1,
-    name: "Ice Island",
-    location: "Indian Ocean",
+    img: beach,
+    name: "Beaches Tour",
+    location: "GOA",
     rating: 4.7,
   },
   {
     id: 3,
-    img: image1,
-    name: "Ice Island",
-    location: "Indian Ocean",
+    img: family_trip,
+    name: "Family Trip",
+    location: "Kulu",
     rating: 4.7,
   },
   {
     id: 4,
-    img: image1,
-    name: "Ice Island",
-    location: "Indian Ocean",
+    img: kashmir,
+    name: "Kashmir Tour Package",
+    location: "J & K",
     rating: 4.7,
   },
   {
     id: 5,
-    img: image1,
-    name: "Ice Island",
-    location: "Indian Ocean",
+    img: Leh,
+    name: "Leh ladakh tour",
+    location: "Leh",
     rating: 4.7,
   },
   {
     id: 6,
-    img: image1,
-    name: "Ice Island",
-    location: "Indian Ocean",
+    img: Char_dham,
+    name: "Char Dham Yatra",
+    location: "Neemkaroli",
     rating: 4.7,
   },
   {
     id: 7,
-    img: image1,
-    name: "Ice Island",
-    location: "Indian Ocean",
+    img: kerala,
+    name: "Kerla Tour",
+    location: "Kerla",
     rating: 4.7,
   },
   {
     id: 8,
-    img: image1,
-    name: "Ice Island",
-    location: "Indian Ocean",
+    img: heli,
+    name: "Helicopter Tour",
+    location: "Himachal",
     rating: 4.7,
   },
 ];
@@ -71,11 +79,20 @@ function Destinations() {
   return (
     <div id="destination" className="destination section container">
       <div className="secContainer">
+        <a
+          class="fixed-tel"
+          href="tel:+91 8360132497"
+          target="_blank"
+          title="Call Now"
+        >
+          <i><FaPhone className="icon" /></i>
+          
+        </a>
         <div className="secTitle">
           <span className="redText" data-aos="fade-up">
             EXPLORE NOW
           </span>
-          <h3 data-aos="fade-up">Find Your Dream Destination</h3>
+          <h3 data-aos="fade-up">Our Packages Categories</h3>
           <p data-aos="fade-up">
             Fill in the fields below to find the best spot for your next tour.
           </p>
@@ -90,7 +107,11 @@ function Destinations() {
                 data-aos="fade-up"
               >
                 <div className="imgDiv" data-aos="fade-up">
-                  <img src={destination.img} alt="Destination Image" data-aos="fade-up" />
+                  <img
+                    src={destination.img}
+                    alt="Destination Image"
+                    data-aos="fade-up"
+                  />
                   <div className="descInfo flex">
                     <div className="text">
                       <span className="name">{destination.name}</span>
