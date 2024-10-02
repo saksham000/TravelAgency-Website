@@ -44,6 +44,8 @@
 }
 .destination .secContainer .destinationContainer {
   margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 .destination .secContainer .destinationContainer .singleDestination {
   position: relative;
@@ -55,6 +57,7 @@
   position: relative;
   height: 100%;
   width: 100%;
+  gap: 2rem;
 }
 .destination .secContainer .destinationContainer .singleDestination .imgDiv img {
   height: 100%;
@@ -112,9 +115,15 @@
   transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
+@media screen and (max-width: 520px) {
+  .destination .secContainer .destinationContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 @media screen and (min-width: 520px) {
   .destination .secContainer .destinationContainer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr); /* Two columns for medium screens */
   }
 }
 @media screen and (min-width: 1014px) {

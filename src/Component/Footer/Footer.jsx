@@ -13,8 +13,8 @@ function Footer() {
   }, []);
   return (
     <div>
-      <footer data-aos="fade-up">
-        <div className="container footerContainer">
+      <footer data-aos="fade-up page-wrapper">
+        <div className="container footerContainer content">
           <div className="footer1">
             <a href="/" className="footerLogo">
               <h4 data-aos="fade-up">Shri Hari Om Yatra</h4>

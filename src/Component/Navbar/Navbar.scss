@@ -39,6 +39,28 @@ root {
     font-size: 0.6rem;
 }
 
+.dropdown {
+    position: absolute; /* Position dropdown relative to parent */
+    background-color: var(--greyText); /* Match this to your navbar background */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    z-index: 999; /* Ensure dropdown is above other content */
+    margin-top: 10px; /* Space from the Itinerary link */
+    border-radius: 5px;
+    padding: 0.5rem 0; /* Padding for dropdown items */
+}
+
+.dropdownLink {
+    display: block; /* Make the link take full width */
+    padding: 10px 15px; /* Padding for each link */
+    color: var(--whiteColor); /* Adjust color as needed */
+    text-decoration: none; /* Remove underline */
+}
+
+.dropdownLink:hover {
+    background-color: var(--primaryColor);
+    /* Change background on hover */
+}
+
 .navBar {
     display: flex;
     align-items: center;
@@ -94,6 +116,7 @@ root {
                 font-size: 1.2rem;
             }
         }
+        
     }
     .menu {
         position: absolute;
@@ -125,6 +148,9 @@ root {
             color: var(--primaryColor);
             border-bottom: 1.5px solid var(--primaryColor);
         }
+    }
+    .dropdown{
+        margin-left: 7rem;
     }
 }
 

@@ -6,11 +6,6 @@ import "aos/dist/aos.css";
 import adventure from "../../Assets/popularPackages/adventure.jpg";
 import beach from "../../Assets/popularPackages/beach.jpg";
 import family_trip from "../../Assets/popularPackages/family_trip.jpg";
-import kashmir from "../../Assets/popularPackages/kashmir..jpg";
-import Leh from "../../Assets/popularPackages/Leh.jpg";
-import kerala from "../../Assets/popularPackages/kerala.png";
-import Char_dham from "../../Assets/popularPackages/Char_dham.png";
-import heli from "../../Assets/popularPackages/heli.png";
 import { FaPhone } from "react-icons/fa6";
 
 const destinations = [
@@ -20,6 +15,7 @@ const destinations = [
     name: "Adventure Tour",
     location: "USA",
     rating: 4.7,
+    url: "/chardham",
   },
   {
     id: 2,
@@ -27,6 +23,7 @@ const destinations = [
     name: "Beaches Tour",
     location: "GOA",
     rating: 4.7,
+    url: "/doodham",
   },
   {
     id: 3,
@@ -34,41 +31,7 @@ const destinations = [
     name: "Family Trip",
     location: "Kulu",
     rating: 4.7,
-  },
-  {
-    id: 4,
-    img: kashmir,
-    name: "Kashmir Tour Package",
-    location: "J & K",
-    rating: 4.7,
-  },
-  {
-    id: 5,
-    img: Leh,
-    name: "Leh ladakh tour",
-    location: "Leh",
-    rating: 4.7,
-  },
-  {
-    id: 6,
-    img: Char_dham,
-    name: "Char Dham Yatra",
-    location: "Neemkaroli",
-    rating: 4.7,
-  },
-  {
-    id: 7,
-    img: kerala,
-    name: "Kerla Tour",
-    location: "Kerla",
-    rating: 4.7,
-  },
-  {
-    id: 8,
-    img: heli,
-    name: "Helicopter Tour",
-    location: "Himachal",
-    rating: 4.7,
+    url: "/contact",
   },
 ];
 
@@ -108,11 +71,13 @@ function Destinations() {
                 data-aos="fade-up"
               >
                 <div className="imgDiv" data-aos="fade-up">
-                  <img
-                    src={destination.img}
-                    alt="Destination Image"
-                    data-aos="fade-up"
-                  />
+                  <a href={destination.url}>
+                    <img
+                      src={destination.img}
+                      alt="Destination Image"
+                      data-aos="fade-up"
+                    />
+                  </a>
                   <div className="descInfo flex">
                     <div className="text">
                       <span className="name">{destination.name}</span>

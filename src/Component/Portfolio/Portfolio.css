@@ -22,6 +22,7 @@ root {
 
 .portifolio .secContainer {
   gap: 2rem;
+  margin-top: 2rem;
 }
 .portifolio .secContainer .leftContent .grid .singlePortifolio {
   gap: 1rem;

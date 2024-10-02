@@ -97,10 +97,21 @@ function Home() {
         <div className="content">
           <h3 data-aos="fade-up">Popular Places</h3>
           <div className="images flex" data-aos="fade-up">
-            <img src={hridwar} alt="" />
-            <img src={kedarnath} alt="" />
-            <img src={chardham} alt="" />
-            <img src={badrinath} alt="" />
+            <a href="/">
+              <img src={hridwar} alt="" />
+            </a>
+            <a href="/">
+              <img src={kedarnath} alt="" />
+            </a>
+            <a href="/">
+              <img src={chardham} alt="" />
+            </a>
+            <a href="/">
+              <img src={badrinath} alt="" />
+            </a>
+            <a href="/">
+              <img src={badrinath} alt="" />
+            </a>
           </div>
         </div>
       </div>

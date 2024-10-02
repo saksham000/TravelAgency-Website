@@ -9,25 +9,23 @@ import { ImTwitter } from "react-icons/im";
 import { AiFillInstagram } from "react-icons/ai";
 
 function Navbar() {
-  // state to track and update navar
-
   const [navBar, setNavBar] = useState("menu");
   const [navBgColor, setNavBgColor] = useState("transparent");
-  // func to show nav
+  const [dropdown, setDropdown] = useState(false); // State to control dropdown visibility
+
   const showNavBar = () => {
     setNavBar("menu showNavbar");
   };
-  // fun to close navbar
+
   const closeNavBar = () => {
     setNavBar("menu");
   };
 
-  // Change background color on scroll
   const handleScroll = () => {
     if (window.scrollY > 50) {
-      setNavBgColor("#696262d5"); // Change to red when scrolled more than 50px
+      setNavBgColor("#696262d5");
     } else {
-      setNavBgColor("transparent"); // Reset to transparent
+      setNavBgColor("transparent");
     }
   };
 
@@ -55,19 +53,32 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a className="navList" href="/#branches">
+            <a className="navList" href="#branches">
               Branches
             </a>
           </li>
           <li>
-            <a className="navList" href="/#reviews">
-              Testimonial
+            <a className="navList" href="#reviews">
+              Have a Question ?
             </a>
           </li>
-          <li>
-            <a className="navList" href="/#questions">
-              Have Question ?
+          <li
+            onMouseEnter={() => setDropdown(true)} // Show dropdown on hover
+            onMouseLeave={() => setDropdown(false)} // Hide dropdown when mouse leaves
+          >
+            <a className="navList" href="#">
+              Itinerary
             </a>
+            {dropdown && ( // Conditionally render the dropdown
+              <div className="dropdown">
+                <a href="/chardham" className="dropdownLink">
+                  Chardham
+                </a>
+                <a href="/doodham" className="dropdownLink">
+                  Doodham
+                </a>
+              </div>
+            )}
           </li>
           <li>
             <div className="socialIcons">
@@ -95,13 +106,11 @@ function Navbar() {
             </div>
           </li>
         </ul>
-        {/* icon to remove navbar */}
         <AiFillCloseCircle className="icon closeIcon" onClick={closeNavBar} />
       </div>
       <Link to="/contact" className="signInBtn btn">
         Contact Us !
       </Link>
-      {/* icon to toggle navbar */}
       <PiDotsNineBold className="icon menuIcon" onClick={showNavBar} />
     </div>
   );

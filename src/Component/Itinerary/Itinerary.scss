@@ -1,0 +1,403 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Anybody:ital,wght@0,100..900;1,100..900&family=Arbutus+Slab&display=swap");
+
+root {
+    --primaryColor: #8fbc8f;
+    --primaryColorLight: hsl(14, 96%, 91%);
+    --bgColor: #fdf5e6;
+    --formColor: hsl(20, 42%, 87%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%, 18%);
+    --greyText: hsl(0, 0%, 51%);
+    --inputColor: hsl(330, -12%, 97%);
+    --cardColor: hsl(300, 3%, 94%);
+
+    /* Font ang Typography */
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.6rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: 0.938rem;
+    --smallFontSize: 0.813rem;
+    --smallestFontSize: 0.75rem;
+    --borderRadius: 3rem;
+
+    // Imported from another project
+
+    --color-primary: #66cdaa;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #8fbc8f;
+    --footer-color: #f4a460;
+    // f4a460
+    --color-bg2: #424890;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+    --transition: all 400ms ease;
+}
+
+/* Home Section Styling */
+.heroSec {
+    position: relative;
+    height: 95vh;
+    width: 100%;
+    top: 0;
+
+    .bgImg {
+        position: absolute;
+        height: 90vh;
+        width: 100%;
+        z-index: -1;
+
+        img {
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .sectionText {
+        position: absolute;
+        height: 100%;
+        top: 36%;
+        bottom: 50%;
+        color: var(--primaryColorLight);
+        padding: 0 1.3rem;
+
+        h1 {
+            font-size: var(--biggestFontSize);
+            font-weight: 900;
+            margin-bottom: 1rem; /* Added spacing after title */
+            text-align: center; /* Center align title */
+        }
+
+        p {
+            padding: 1rem 0;
+            font-size: var(--normalFontSize);
+            font-weight: 500;
+            color: var(--primaryColorLight);
+            text-align: center; /* Center align text */
+        }
+    }
+}
+
+/* Center Text Section */
+.centerText {
+    text-align: center;
+    margin-top: -1rem; /* Adjusted spacing */
+    margin-bottom: -1rem; /* Added bottom margin */
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--primaryColorDark);
+    }
+}
+strong,
+.actiLi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+/* Itinerary Section Styling */
+.itinerary {
+    padding: 2rem;
+    max-width: 85rem;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center align text */
+
+    .day-section {
+        display: grid;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        background: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem; /* Increased spacing after title */
+            color: #333;
+        }
+
+        p {
+            margin-bottom: 1rem; /* Increased spacing between paragraphs */
+            font-size: 1.2rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 1.5rem;
+            text-align: left; /* Keep list items left-aligned */
+            display: inline-block; /* Center the list */
+            font-size: 1.2rem;
+        }
+    }
+
+    .mapDiv {
+        margin-top: 1rem;
+        margin-bottom: 2rem; /* Increased bottom margin for spacing */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        iframe {
+            width: 100%;
+            max-width: 50rem; /* Limit the max width */
+            height: 27rem;
+            border-radius: 1rem;
+            border: none; /* Remove border */
+        }
+    }
+
+    .itineraryBlock {
+        margin-bottom: 3rem; /* Add spacing between blocks */
+    }
+}
+
+/* Pricing Section Styling */
+.pricingSection {
+    padding: 2rem;
+    max-width: 85rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: center; /* Center align text */
+    background: #f9f9f9;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem; /* Space above the pricing section */
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem; /* Spacing after title */
+        color: #333;
+    }
+
+    p {
+        margin: 0.5rem 0; /* Space between paragraphs */
+        font-size: 1.1rem;
+        margin-bottom: 1.1rem;
+    }
+
+    .note {
+        margin-top: 1rem; /* Extra space above note */
+        font-style: italic;
+        font-size: 1rem;
+        color: #666; /* Lighter color for note */
+    }
+}
+
+/* Media Queries for Home Section */
+@media screen and (min-width: 1040px) {
+    .heroSec {
+        .sectionText {
+            h1 {
+                font-size: 3.8rem;
+                font-weight: 900;
+                max-width: 70%;
+                margin: auto;
+                color: var(--primaryColorLight);
+                margin-top: -1%;
+                margin-bottom: 1.5rem; /* Increased spacing */
+                text-align: center; /* Center align title */
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .heroSec {
+        .sectionText {
+            padding: 0 2rem;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+
+            h1 {
+                font-size: 3.5rem;
+                font-weight: 900;
+                margin-bottom: 1rem; /* Added spacing */
+            }
+            p {
+                padding: 1rem 0;
+                font-size: 1.5rem;
+                max-width: 70%;
+                margin: auto;
+                text-align: center; /* Center align text */
+            }
+        }
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .heroSec {
+        .sectionText {
+            padding: 0 2rem;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+
+            h1 {
+                font-size: var(--biggestFontSize);
+                font-weight: 900;
+            }
+            p {
+                padding: 1rem 0;
+                font-size: var(--h2FontSize);
+                max-width: 70%;
+                margin: auto;
+            }
+        }
+    }
+
+    .itinerary,
+    .pricingSection {
+        padding: 1rem;
+        h2 {
+            font-size: 1.8rem;
+        }
+        p,
+        ul {
+            font-size: 1rem;
+        }
+    }
+
+    .mapDiv iframe {
+        height: 20rem;
+    }
+}
+
+/* Tablets (min-width: 481px and max-width: 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .heroSec {
+        .sectionText {
+            h1 {
+                font-size: 2.8rem;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-size: 1.3rem;
+                padding: 0.8rem 0;
+            }
+        }
+    }
+
+    .itinerary,
+    .pricingSection {
+        padding: 1.5rem;
+        h2 {
+            font-size: 2.2rem;
+        }
+        p,
+        ul {
+            font-size: 1.1rem;
+        }
+    }
+
+    .mapDiv iframe {
+        height: 25rem;
+    }
+}
+
+/* Laptops (min-width: 769px and max-width: 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .heroSec {
+        .sectionText {
+            width: 100%;
+
+            h1 {
+                font-size: 4rem;
+                font-weight: 900;
+                max-width: 70%;
+                margin: auto;
+            }
+            p {
+                padding: 1rem 0;
+                font-size: var(--h2FontSize);
+                max-width: 70%;
+                margin: auto;
+            }
+        }
+    }
+
+    .itinerary,
+    .pricingSection {
+        padding: 2rem;
+        h2 {
+            font-size: 2.5rem;
+        }
+        p,
+        ul {
+            font-size: 1.2rem;
+        }
+    }
+
+    .mapDiv iframe {
+        height: 26rem;
+    }
+}
+
+/* Desktops and larger screens (min-width: 1025px) */
+@media screen and (min-width: 1025px) {
+    .heroSec {
+        .sectionText {
+            h1 {
+                font-size: 4rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .itinerary,
+    .pricingSection {
+        padding: 2.5rem;
+        h2 {
+            font-size: 3rem;
+        }
+        p,
+        ul {
+            font-size: 1.3rem;
+        }
+    }
+
+    .mapDiv iframe {
+        height: 30rem;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 459px) {
+    .heroSec {
+        margin-top: -17%;
+        .sectionText {
+            padding: 0 2rem;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+
+            h1 {
+                font-size: var(--biggestFontSize);
+                font-weight: 900;
+            }
+            p {
+                padding: 3rem 0;
+                font-size: var(--h2FontSize);
+                max-width: 70%;
+                margin: auto;
+            }
+        }
+    }
+}
