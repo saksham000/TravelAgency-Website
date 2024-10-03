@@ -229,7 +229,7 @@ function CharDham() {
                       <strong className="strong" data-aos="fade-up">
                         Activities:
                       </strong>
-                      <ul >
+                      <ul>
                         {item.activities.map((activity, j) => (
                           <li className="actiLi" key={j}>
                             {activity}
@@ -263,13 +263,30 @@ function CharDham() {
       {/* Pricing Section */}
       <div className="pricingSection" data-aos="fade-up">
         <h2 data-aos="fade-up">Price</h2>
-        <p data-aos="fade-up">1. Adult on twin sharing - ₹22,500</p>
-        <p data-aos="fade-up">2. Adult on triple sharing - ₹21,000</p>
-        <p data-aos="fade-up">3. Adult on 4-bed sharing - ₹20,500</p>
-        <p data-aos="fade-up">4. Adult in Single Room - ₹28,500</p>
-        <p data-aos="fade-up">5. Child (3-11 Yrs) without bed - ₹16,000</p>
-        <p data-aos="fade-up">6. Child (0-3 Yrs) Complimentary</p>
-        <p className="note">*Prices may vary</p>
+        <p data-aos="fade-up">
+          1. Adult on twin sharing - ₹22,500{" "}
+          <i className="note">*Prices may vary</i>
+        </p>
+        <p data-aos="fade-up">
+          2. Adult on triple sharing - ₹21,000{" "}
+          <i className="note">*Prices may vary</i>
+        </p>
+        <p data-aos="fade-up">
+          3. Adult on 4-bed sharing - ₹20,500
+          <i className="note">*Prices may vary</i>
+        </p>
+        <p data-aos="fade-up">
+          4. Adult in Single Room - ₹28,500{" "}
+          <i className="note">*Prices may vary</i>
+        </p>
+        <p data-aos="fade-up">
+          5. Child (3-11 Yrs) without bed - ₹16,000{" "}
+          <i className="note">*Prices may vary</i>
+        </p>
+        <p data-aos="fade-up">
+          6. Child (0-3 Yrs) Complimentary{" "}
+          <i className="note">*Prices may vary</i>
+        </p>
       </div>
     </div>
   );

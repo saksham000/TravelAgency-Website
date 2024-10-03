@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import "./Home.css";
 import { AiOutlineSwapRight } from "react-icons/ai";
-import kedarnath from "../../Assets/kedarnath.jpg";
-import hridwar from "../../Assets/hridwar.jpg";
-import chardham from "../../Assets/chardham.jpg";
-import badrinath from "../../Assets/badrinath.jpg";
+import yamunotri from "../../Assets/popularplaces/1.jpg";
+import gangotri from "../../Assets/popularplaces/2.jpg";
+import kedarnath from "../../Assets/popularplaces/3.jpg";
+import badrinath from "../../Assets/popularplaces/4.jpg";
+import haridwar from "../../Assets/popularplaces/5.jpg";
 import bg1 from "../../Assets/background/bg1.jpg";
 import bg2 from "../../Assets/background/bg2.jpg";
 import bg3 from "../../Assets/background/bg3.jpg";
@@ -20,6 +21,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 
 function Home() {
   useEffect(() => {
@@ -97,29 +99,27 @@ function Home() {
         <div className="content">
           <h3 data-aos="fade-up">Popular Places</h3>
           <div className="images flex" data-aos="fade-up">
-            <a href="/">
-              <img src={hridwar} alt="" />
-            </a>
-            <a href="/">
-              <img src={kedarnath} alt="" />
-            </a>
-            <a href="/">
-              <img src={chardham} alt="" />
-            </a>
-            <a href="/">
-              <img src={badrinath} alt="" />
-            </a>
-            <a href="/">
-              <img src={badrinath} alt="" />
-            </a>
+            <Link to="/yamunotri">
+              <img src={yamunotri} alt="image1" />
+            </Link>
+            <Link to="/gangotri">
+              <img src={gangotri} alt="image2" />
+            </Link>
+            <Link to="/kedarnath">
+              <img src={kedarnath} alt="image3" />
+            </Link>
+            <Link to="/badrinath">
+              <img src={badrinath} alt="image4" />
+            </Link>
+            <Link to="/haridwar">
+              <img src={haridwar} alt="image5" />
+            </Link>
           </div>
         </div>
       </div>
       <div class="marquee">
         <div class="marquee-content">
-          <marquee>
-            Get 20% off on your first booking! Book now and enjoy the offer!
-          </marquee>
+          <marquee>Booking are Open Hurry book Now !</marquee>
         </div>
       </div>
     </div>

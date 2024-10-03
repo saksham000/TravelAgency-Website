@@ -3,34 +3,35 @@ import "./Destinations.css";
 import { TiLocation } from "react-icons/ti";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import adventure from "../../Assets/popularPackages/adventure.jpg";
-import beach from "../../Assets/popularPackages/beach.jpg";
-import family_trip from "../../Assets/popularPackages/family_trip.jpg";
+import adventure from "../../Assets/popularPackages/1.jpg";
+import beach from "../../Assets/popularPackages/2.jpg";
+import taxi from "../../Assets/popularPackages/3.jpg";
 import { FaPhone } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const destinations = [
   {
     id: 1,
     img: adventure,
-    name: "Adventure Tour",
-    location: "USA",
-    rating: 4.7,
+    name: "Char Dham",
+    location: "Gangotri,Yamunotri,Badrinath,Kedarnath",
+
     url: "/chardham",
   },
   {
     id: 2,
     img: beach,
-    name: "Beaches Tour",
-    location: "GOA",
-    rating: 4.7,
+    name: "Do Dham",
+    location: "Badrinath,Kedarnath",
+
     url: "/doodham",
   },
   {
     id: 3,
-    img: family_trip,
-    name: "Family Trip",
-    location: "Kulu",
-    rating: 4.7,
+    img: taxi,
+    name: "Taxi Service",
+    location: "Haridwar",
+
     url: "/contact",
   },
 ];
@@ -71,13 +72,13 @@ function Destinations() {
                 data-aos="fade-up"
               >
                 <div className="imgDiv" data-aos="fade-up">
-                  <a href={destination.url}>
+                  <Link to={destination.url}>
                     <img
                       src={destination.img}
                       alt="Destination Image"
                       data-aos="fade-up"
                     />
-                  </a>
+                  </Link>
                   <div className="descInfo flex">
                     <div className="text">
                       <span className="name">{destination.name}</span>
@@ -86,7 +87,7 @@ function Destinations() {
                         {destination.location}
                       </p>
                     </div>
-                    <span className="rating">{destination.rating}</span>
+                    {/* <span className="rating">{destination.rating}</span> */}
                   </div>
                 </div>
               </div>

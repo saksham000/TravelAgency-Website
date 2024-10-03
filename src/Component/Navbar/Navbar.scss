@@ -36,6 +36,8 @@ root {
 
 .smallIcon {
     color: var(--blackColor);
+    margin-bottom: 0.5rem;
+    margin-left: -.5rem;
     font-size: 0.6rem;
 }
 
@@ -116,7 +118,6 @@ root {
                 font-size: 1.2rem;
             }
         }
-        
     }
     .menu {
         position: absolute;
@@ -149,7 +150,7 @@ root {
             border-bottom: 1.5px solid var(--primaryColor);
         }
     }
-    .dropdown{
+    .dropdown {
         margin-left: 7rem;
     }
 }

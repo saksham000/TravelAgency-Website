@@ -52,16 +52,6 @@ function Navbar() {
               Home
             </a>
           </li>
-          <li>
-            <a className="navList" href="#branches">
-              Branches
-            </a>
-          </li>
-          <li>
-            <a className="navList" href="#reviews">
-              Have a Question ?
-            </a>
-          </li>
           <li
             onMouseEnter={() => setDropdown(true)} // Show dropdown on hover
             onMouseLeave={() => setDropdown(false)} // Hide dropdown when mouse leaves
@@ -71,15 +61,21 @@ function Navbar() {
             </a>
             {dropdown && ( // Conditionally render the dropdown
               <div className="dropdown">
-                <a href="/chardham" className="dropdownLink">
+                <Link to="/chardham" className="dropdownLink">
                   Chardham
-                </a>
-                <a href="/doodham" className="dropdownLink">
-                  Doodham
-                </a>
+                </Link>
+                <Link to="/doodham" className="dropdownLink">
+                  Do dham
+                </Link>
               </div>
             )}
           </li>
+          <li>
+            <a className="navList" href="/#questions">
+              Have a Question ?
+            </a>
+          </li>
+
           <li>
             <div className="socialIcons">
               <a

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Subscribe.css";
-import image1 from "../../Assets/image1.jpg";
+import aboutus from "../../Assets/about-us.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 function Subscribe() {
@@ -10,12 +10,21 @@ function Subscribe() {
   return (
     <div className="subscribe section container">
       <div className="secContainer grid">
-        <img src={image1} alt="Div Image" data-aos="fade-down" />
+        <img src={aboutus} alt="Div Image" data-aos="fade-down" />
         <div className="textDiv">
-          <h4 data-aos="fade-up">Best way to start your journey !</h4>
+          <h4 data-aos="fade-up">About Us !</h4>
           <p data-aos="fade-up">
-            we offer personalized intericanoj tailer to idani dnosn
-            andannlndalksd
+            Welcome to Shri Hari Om Yatra, serving you since 1975 by providing
+            the best travel packages and cabs in Haridwar. As the oldest travel
+            agency in the region, we pride ourselves on offering unmatched
+            services tailored to your travel needs. Whether you're seeking a
+            spiritual pilgrimage to the sacred sites of Uttarakhand or a
+            relaxing getaway in the serene Himalayas, our expert team ensures a
+            seamless and memorable journey. We specialize in personalized travel
+            experiences, premium accommodations, and hassle-free transportation,
+            making us your trusted partner in exploring the wonders of Haridwar
+            and beyond. Let us guide you on your next adventure with the best
+            services available.
           </p>
           <a href="/contact">
             <button className="btn" data-aos="fade-up">

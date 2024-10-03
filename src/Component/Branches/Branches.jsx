@@ -23,23 +23,26 @@ function Branches() {
               <img src={image1} data-aos="fade-up" alt="Branch 1" />
             </div>
             <div className="branchInfo">
-              <h4 data-aos="fade-up">Branch in Location 1</h4>
+              <h4 data-aos="fade-up">Shri Hari Om Yatra</h4>
               <p data-aos="fade-up">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Possimus error earum eligendi voluptatum qui, vel similique?
+                Serving You Since 1975 with Exceptional Travel Experiences,
+                Tailored Packages, and Memorable Journeys to Sacred Destinations
               </p>
               <div className="contactInfo">
                 <h3 data-aos="fade-up">Contact Us At</h3>
                 <ul>
                   <li data-aos="fade-up">
-                    <FaPhone /> 8360132497
+                    <FaPhone /> 9319028166
                   </li>
                   <li data-aos="fade-up">
-                    <GrMail /> yourmail@gmail.com
+                    <GrMail /> shrihariomyatra@gmail.com
                   </li>
                   <li data-aos="fade-up">
                     <SiGooglemaps />
-                    <a target="_blank" href="https://www.google.com/maps">
+                    <a
+                      target="_blank"
+                      href="https://www.google.com/maps?q=29.9470545,78.1570162"
+                    >
                       Click here for loaction
                     </a>
                   </li>
@@ -50,31 +53,11 @@ function Branches() {
 
           <article className="branch" data-aos="fade-up">
             <div className="branchImage">
-              <img src={image1} data-aos="fade-up" alt="Branch 2" />
+              {/* <img src={image1} data-aos="fade-up" alt="Branch 2" /> */}
             </div>
             <div data-aos="fade-up" className="branchInfo">
-              <h4>Branch in Location 2</h4>
-              <p data-aos="fade-up">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Possimus error earum eligendi voluptatum qui, vel similique?
-              </p>
-              <div className="contactInfo">
-                <h3 data-aos="fade-up">Contact Us At</h3>
-                <ul>
-                  <li data-aos="fade-up">
-                    <FaPhone /> 8360132497
-                  </li>
-                  <li data-aos="fade-up">
-                    <GrMail /> yourmail@gmail.com
-                  </li>
-                  <li data-aos="fade-up">
-                    <SiGooglemaps />
-                    <a target="_blank" href="https://www.google.com/maps">
-                      Click here for loaction
-                    </a>
-                  </li>
-                </ul>
-              </div>
+              <h4>Shri Shakti Wahini Travels</h4>
+              <p data-aos="fade-up">Serving you since 1972</p>
             </div>
           </article>
         </div>

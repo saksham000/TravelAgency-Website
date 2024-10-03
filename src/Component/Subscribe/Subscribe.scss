@@ -60,6 +60,8 @@ root {
             img {
                 max-width: 75%;
                 margin: auto;
+                height: 30rem;
+                width: 20rem;
             }
             .textDiv {
                 h4 {
@@ -108,7 +110,7 @@ root {
                 }
                 p {
                     padding: 2rem;
-                    font-size: var(--h2FontSize);
+                    font-size: 1.2rem;
                 }
             }
         }

@@ -152,7 +152,9 @@ strong,
 
 /* Pricing Section Styling */
 .pricingSection {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
   max-width: 85rem;
   margin: auto;
   margin-bottom: 2rem;
@@ -173,7 +175,6 @@ strong,
   margin-bottom: 1.1rem;
 }
 .pricingSection .note {
-  margin-top: 1rem; /* Extra space above note */
   font-style: italic;
   font-size: 1rem;
   color: #666; /* Lighter color for note */

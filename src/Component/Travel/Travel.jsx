@@ -8,6 +8,11 @@ import Footer from "../Footer/Footer";
 import CharDham from "../Itinerary/CharDham";
 import ErrorComponent from "../ErrorComponent/ErrorComponent";
 import DooDham from "../Itinerary/DooDham";
+import Yamunotri from "../Home/Popular-Places/Yamunotri";
+import Gangotri from "../Home/Popular-Places/Gangotri";
+import Kedarnath from "../Home/Popular-Places/Kedarnath";
+import Badrinath from "../Home/Popular-Places/Badrinath";
+import Haridwar from "../Home/Popular-Places/Haridwar";
 
 function Travel() {
   return (
@@ -19,6 +24,11 @@ function Travel() {
           <Route path="/chardham" element={<CharDham />} />
           <Route path="/contact" element={<Contactus />} />
           <Route path="/doodham" element={<DooDham />} />
+          <Route path="/yamunotri" element={<Yamunotri />} />
+          <Route path="/gangotri" element={<Gangotri />} />
+          <Route path="/kedarnath" element={<Kedarnath />} />
+          <Route path="/badrinath" element={<Badrinath />} />
+          <Route path="/haridwar" element={<Haridwar />} />
           <Route path="*" element={<ErrorComponent />} />
         </Routes>
         <Footer />

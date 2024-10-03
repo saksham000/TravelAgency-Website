@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Anybody:ital,wght@0,100..900;1,100..900&family=Arbutus+Slab&display=swap");
+root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, -12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+  /* Font ang Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.heroSec {
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  top: 0;
+}
+.heroSec .Bg {
+  position: absolute;
+  height: 95vh;
+  width: 100%;
+  z-index: -1;
+}
+.heroSec .Bg img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.heroSec .secText {
+  position: absolute;
+  height: 100%;
+  top: 45%;
+  bottom: 50%;
+  color: var(--primaryColorLight);
+  padding: 0 1.3rem;
+}
+.heroSec .secText h1 {
+  font-size: var(--biggestFontSize);
+  font-weight: 900;
+}
+.heroSec .secText p {
+  padding: 1rem 0;
+  font-size: var(--normalFontSize);
+  font-weight: 500;
+  color: var(--primaryColorLight);
+}
+
+.textPara {
+  display: grid;
+  gap: 2rem;
+  padding: 1.5rem;
+  background: var(--whiteColor);
+  border-radius: 1rem;
+}
+.textPara p {
+  font-size: 1.1rem;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  width: 40rem;
+  height: 25rem;
+  border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.centerText {
+  text-align: center;
+  margin-top: -1rem; /* Adjusted spacing */
+  margin-bottom: -1rem; /* Added bottom margin */
+}
+.centerText h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primaryColorDark);
+}
+
+@media screen and (min-width: 480px) {
+  .heroSec .secText {
+    padding: 0 2rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .heroSec .secText h1 {
+    font-size: var(--biggestFontSize);
+    font-weight: 900;
+  }
+  .heroSec .secText p {
+    padding: 1rem 0;
+    font-size: var(--h2FontSize);
+    max-width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 769px) {
+  .secContainer.secCont {
+    flex-direction: column; /* Stack on mobile */
+    align-items: center; /* Center the items */
+  }
+  .image {
+    margin-bottom: 1rem; /* Add space below image */
+    flex: none; /* Reset flex properties */
+  }
+  .textPara {
+    flex: none; /* Reset flex properties */
+  }
+  .heroSec .secText {
+    width: 100%;
+  }
+  .heroSec .secText h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    max-width: 70%;
+    margin: auto;
+  }
+  .heroSec .secText p {
+    padding: 1rem 0;
+    font-size: var(--h2FontSize);
+    max-width: 70%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1040px) {
+  .heroSec {
+    position: relative;
+  }
+  .heroSec .secText h1 {
+    font-size: 3.8rem;
+    font-weight: 900;
+    max-width: 70%;
+    margin: auto;
+    color: var(--primaryColorLight);
+    margin-top: -1%;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 459px) {
+  .image img {
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 1rem;
+    border-radius: 8px; /* Optional: adds rounded corners */
+  }
+  .centerText {
+    text-align: center;
+    margin-top: -1rem; /* Adjusted spacing */
+    margin-bottom: -1rem; /* Added bottom margin */
+  }
+  .centerText h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primaryColorDark);
+  }
+  .heroSec {
+    margin-top: -17%;
+  }
+  .heroSec .Bg img {
+    z-index: -1;
+    height: 100%;
+  }
+  .heroSec .secText {
+    padding: 0 2rem;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .heroSec .secText h1 {
+    font-size: var(--biggestFontSize);
+    font-weight: 900;
+  }
+  .heroSec .secText p {
+    padding: 3rem 0;
+    font-size: var(--h2FontSize);
+    max-width: 70%;
+    margin: auto;
+  }
+}/*# sourceMappingURL=Popular-Places.css.map */

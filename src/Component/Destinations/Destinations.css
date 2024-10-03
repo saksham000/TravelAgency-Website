@@ -101,15 +101,6 @@
 .destination .secContainer .destinationContainer .singleDestination .descInfo .text .icon {
   font-size: var(--normalFontSize);
 }
-.destination .secContainer .destinationContainer .singleDestination .descInfo .rating {
-  padding: 8px 1rem;
-  border-radius: var(--borderRadius);
-  background: rgba(245, 245, 245, 0.37);
-  border: 1.5px solid rgba(255, 255, 255, 0.241);
-  font-size: var(--h3FontSize);
-  font-weight: 600;
-  color: var(--whiteColor);
-}
 .destination .secContainer .destinationContainer .singleDestination:hover {
   box-shadow: 5px 0 10px rgba(0, 140, 255, 0.8352941176), -5px 0 10px #e100ff;
   transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;

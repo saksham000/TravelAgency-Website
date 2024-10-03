@@ -25,123 +25,88 @@ function DooDham() {
 
   const itineraryData = [
     {
-      day: "Day 1: Haridwar to Barkot",
-      travel:
-        "Drive from Haridwar to Barkot (approximately 220 km, 7-8 hours).",
-      route: "Haridwar – Rishikesh – Dehradun – Mussoorie – Barkot.",
-      stay: "Overnight stay in Barkot.",
+      day: "Day 1: Arrival in Haridwar",
+      travel: "Check-in at your hotel in Haridwar.",
       activities: [
-        "1. Enroute, visit Kempty Falls in Mussoorie.",
-        "2. Enjoy the scenic beauty.",
+        "1. Visit Har Ki Pauri for Ganga Aarti in the evening.",
+        "2. Explore local temples like Mansa Devi and Chandi Devi.",
       ],
-      location: "Barkot, Uttarakashi, India",
-      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=(haridwar%20to%20barkot)&t=&z=8&ie=UTF8&iwloc=B&output=embed",
-    },
-    {
-      day: "Day 2: Barkot to Yamunotri and Back to Barkot",
-      travel:
-        "Drive from Barkot to Jankichatti/Phoolchatti (approximately 36 km), then trek 6 km to Yamunotri.",
-      activities: [
-        "1. Trek to Yamunotri, take a dip in the Yamuna River, and visit the Yamunotri Temple.",
-        "2. Trek back to Jankichatti/Phoolchatti and drive back to Barkot.",
-      ],
-      stay: "Overnight stay in Barkot.",
-      location: "Yamunotri, Uttarakashi, India",
-      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(Barkot%20to%20Yamunotri)&t=&z=11&ie=UTF8&iwloc=B&output=embed",
-    },
-    {
-      day: "Day 3: Barkot to Uttarkashi",
-      travel:
-        "Drive from Barkot to Uttarkashi (approximately 100 km, 4-5 hours).",
-      route: "Barkot – Dharasu Band – Uttarkashi.",
-      stay: "Overnight stay in Uttarkashi.",
-      activities: [
-        "1. Visit Vishwanath Temple in Uttarkashi.",
-        "2. Stroll around the town and enjoy the serene surroundings.",
-      ],
-      location: "Uttarkashi, Uttarakashi, India",
-      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(Barkot%20to%20Uttarkashi)&t=&z=10&ie=UTF8&iwloc=B&output=embed",
-    },
-    {
-      day: "Day 4: Uttarkashi to Gangotri and Back to Uttarkashi",
-      travel:
-        "Drive from Uttarkashi to Gangotri (approximately 100 km, 3-4 hours).",
-      activities: [
-        "1. Visit the Gangotri Temple.",
-        "2. Take a holy dip in the sacred Bhagirathi River.",
-        "Explore nearby sites such as Pandava Gufa.",
-      ],
-      stay: "Overnight stay in Uttarkashi.",
-      location: "Gangotri, Uttarakashi, India",
-      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(Uttarkashi%20to%20Gangotri)&t=&z=10&ie=UTF8&iwloc=B&output=embed",
-    },
-    {
-      day: "Day 5: Uttarkashi to Guptkashi",
-      travel:
-        "Drive from Uttarkashi to Guptkashi (approximately 220 km, 8-9 hours).",
-      route: "Uttarkashi – Srinagar – Rudraprayag – Guptkashi.",
-      stay: "Overnight stay in Guptkashi.",
-      activities: [
-        "1. Rest and prepare for the next day's journey to Kedarnath.",
-      ],
-      location: "Guptkashi, Uttarakashi, India",
-      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(Uttarkashi%20to%20Guptkashi)&t=&z=9&ie=UTF8&iwloc=B&output=embed",
-    },
-    {
-      day: "Day 6: Guptkashi to Kedarnath",
-      travel:
-        "Drive from Guptkashi to Gaurikund (approximately 30 km), then trek 16 km to Kedarnath.",
-      activities: ["1. Trek to Kedarnath.", "2. Visit the Kedarnath Temple."],
-      stay: "Overnight stay in Kedarnath (book in advance).",
-      location: "Kedarnath, Uttarakashi, India",
-      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(Guptkashi%20to%20Kedarnath)&t=&z=10&ie=UTF8&iwloc=B&output=embed",
-    },
-    {
-      day: "Day 7: Kedarnath to Guptkashi",
-      activities: [
-        "1. Trek back from Kedarnath to Gaurikund.",
-        "2. Drive from Gaurikund to Guptkashi.",
-      ],
-      stay: "Overnight stay in Guptkashi.",
-      location: "Guptkashi, Uttarakashi, India",
-      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(Kedarnath%20to%20Guptkashi)&t=&z=10&ie=UTF8&iwloc=B&output=embed",
-    },
-    {
-      day: "Day 8: Guptkashi to Badrinath",
-      travel:
-        "Drive from Guptkashi to Badrinath (approximately 200 km, 7-8 hours).",
-      route: "Guptkashi – Rudraprayag – Joshimath – Badrinath.",
-      stay: "Overnight stay in Badrinath.",
-      activities: [
-        "1. Visit Badrinath Temple.",
-        "2. Take a dip in the Tapt Kund (hot springs).",
-      ],
-      location: "Badrinath, Uttarakashi, India",
-      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(Guptkashi%20to%20Badrinath)&t=&z=10&ie=UTF8&iwloc=B&output=embed",
-    },
-    {
-      day: "Day 9: Badrinath to Rudraprayag",
-      travel:
-        "Drive from Badrinath to Rudraprayag (approximately 160 km, 5-6 hours).",
-      route: "Badrinath – Joshimath – Chamoli – Karnaprayag – Rudraprayag.",
-      stay: "Overnight stay in Rudraprayag.",
-      activities: [
-        "1. Visit the confluence of Alaknanda and Mandakini rivers.",
-      ],
-      location: "Rudraprayag, Uttarakashi, India",
-      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(Badrinath%20to%20Rudraprayag)&t=&z=9&ie=UTF8&iwloc=B&output=embed",
-    },
-    {
-      day: "Day 10: Rudraprayag to Haridwar",
-      travel:
-        "Drive from Rudraprayag to Haridwar (approximately 165 km, 5-6 hours).",
-      route: "Rudraprayag – Srinagar – Rishikesh – Haridwar.",
-      activities: [
-        "1. Enroute, visit Devprayag (the confluence of Alaknanda and Bhagirathi rivers).",
-      ],
-      stay: "Arrival in Haridwar, conclude the Yatra.",
+      stay: "Overnight Stay at a hotel in Haridwar.",
       location: "Haridwar, Uttarakashi, India",
-      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(Rudraprayag%20to%20Haridwar)&t=&z=10&ie=UTF8&iwloc=B&output=embed",
+      url: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=+(Haridwar)&t=&z=14&ie=UTF8&iwloc=B&output=embed",
+    },
+    {
+      day: "Day 2: Haridwar to Guptkashi",
+      travel: "Drive from Haridwar to Guptkashi (205 km | 8-9 hours).",
+      route: "Haridwar – Rishikesh – Devprayag – Rudraprayag – Guptkashi.",
+      activities: [
+        "1. Stop at Devprayag (confluence of Bhagirathi and Alaknanda rivers).",
+        "2. Visit Rudraprayag (confluence of Alaknanda and Mandakini rivers).",
+      ],
+      stay: "Overnight stay in Guptkashi.",
+      location: "Guptkashi, Uttarakashi, India",
+      url: "https://maps.google.com/maps?width=100%25&height=600&hl=en&q=+(Haridwar%20to%20Guptkashi)&t=&z=9&ie=UTF8&iwloc=B&output=embed",
+    },
+    {
+      day: "Day 3: Guptkashi to Kedarnath",
+      travel:
+        "Drive from Guptkashi to Sonprayag (30 km), then trek 18 km to Kedarnath.",
+      activities: [
+        "1. Early morning drive to Sonprayag.",
+        "2. Begin the 18 km trek from Gaurikund to Kedarnath.",
+        "3. Visit the Kedarnath Temple and attend evening aarti.",
+      ],
+      stay: "Overnight stay in Kedarnath.",
+      location: "Kedarnath, Uttarakashi, India",
+      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(guptkashi%20to%20kedarnath)&t=&z=10&ie=UTF8&iwloc=B&output=embed",
+    },
+    {
+      day: "Day 4: Kedarnath to Guptkashi",
+      travel: "Trek back from Kedarnath to Sonprayag, then drive to Guptkashi.",
+      activities: [
+        "1. Early morning darshan at Kedarnath Temple.",
+        "2. Relax in Guptkashi after the trek.",
+      ],
+      stay: "Overnight stay in Guptkashi.",
+      location: "Guptkashi, Uttarakashi, India",
+      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(kedarnath%20to%20guptkashi)&t=&z=10&ie=UTF8&iwloc=B&output=embed",
+    },
+    {
+      day: "Day 5: Guptkashi to Badrinath",
+      travel: "Drive to Badrinath (185 km | 7-8 hours).",
+      route: "Guptkashi – Joshimath – Vishnuprayag – Badrinath.",
+      activities: [
+        "1. Visit Joshimath (a winter seat of Lord Badrinath).",
+        "2. Explore Vishnuprayag (confluence of Alaknanda and Dhauliganga rivers).",
+        "3. Attend evening aarti at Badrinath Temple.",
+      ],
+      stay: "Overnight stay in Badrinath.",
+      location: "Badrinath, Uttarakashi, India",
+      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(guptkashi%20to%20badrinath)&t=&z=10&ie=UTF8&iwloc=B&output=embed",
+    },
+    {
+      day: "Day 6: Badrinath to Chopta (via Tungnath)",
+      travel: "Visit Badrinath Temple and travel to Chopta (95 km).",
+      activities: [
+        "1. Take a dip in Tapt Kund.",
+        "2. Trek from Chopta to Tungnath Temple (3.5 km).",
+        "3. Option to trek to Chandrashila Peak for panoramic views.",
+      ],
+      stay: "Overnight stay in Chopta.",
+      location: "Chopta, Uttarakashi, India",
+      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(badrinath%20to%20chopta)&t=&z=10&ie=UTF8&iwloc=B&output=embed",
+    },
+    {
+      day: "Day 7: Chopta to Haridwar",
+      travel: "Drive back to Haridwar (215 km | 8-9 hours).",
+      activities: [
+        "1. Depart from Chopta and drive back to Haridwar via Rudraprayag.",
+        "2. Sightseeing en route at any remaining scenic spots or temples.",
+        "3. End of the Tour.",
+      ],
+      stay: "Drop at Haridwar for your onward journey.",
+      location: "Haridwar, Uttarakashi, India",
+      url: "https://maps.google.com/maps?width=520&height=400&hl=en&q=+(chopta%20to%20haridwar)&t=&z=10&ie=UTF8&iwloc=B&output=embed",
     },
   ];
 
@@ -193,16 +158,16 @@ function DooDham() {
           </Swiper>
         </div>
         <div className="sectionText">
-          <h1 data-aos="fade-up">Itinerary and Rates of Doo Dham</h1>
+          <h1 data-aos="fade-up">Itinerary and Rates of Do Dham</h1>
           <p data-aos="fade-up">
-            Discover the world's best Spiritual Places with us !
+            Discover the world's best Spiritual Places with us!
           </p>
         </div>
       </div>
 
       {/* Centered Title */}
       <div className="centerText">
-        <h1 className="secHeading">Doo Dham Yatra</h1>
+        <h1 className="secHeading">Do Dham Yatra</h1>
       </div>
 
       {/* Itinerary Section */}
@@ -263,13 +228,30 @@ function DooDham() {
       {/* Pricing Section */}
       <div className="pricingSection" data-aos="fade-up">
         <h2 data-aos="fade-up">Price</h2>
-        <p data-aos="fade-up">1. Adult on twin sharing - ₹22,500</p>
-        <p data-aos="fade-up">2. Adult on triple sharing - ₹21,000</p>
-        <p data-aos="fade-up">3. Adult on 4-bed sharing - ₹20,500</p>
-        <p data-aos="fade-up">4. Adult in Single Room - ₹28,500</p>
-        <p data-aos="fade-up">5. Child (3-11 Yrs) without bed - ₹16,000</p>
-        <p data-aos="fade-up">6. Child (0-3 Yrs) Complimentary</p>
-        <p className="note">*Prices may vary</p>
+        <p data-aos="fade-up">
+          1. Adult on twin sharing - ₹22,500{" "}
+          <i className="note">*Prices may vary</i>
+        </p>
+        <p data-aos="fade-up">
+          2. Adult on triple sharing - ₹21,000{" "}
+          <i className="note">*Prices may vary</i>
+        </p>
+        <p data-aos="fade-up">
+          3. Adult on 4-bed sharing - ₹20,500
+          <i className="note">*Prices may vary</i>
+        </p>
+        <p data-aos="fade-up">
+          4. Adult in Single Room - ₹28,500{" "}
+          <i className="note">*Prices may vary</i>
+        </p>
+        <p data-aos="fade-up">
+          5. Child (3-11 Yrs) without bed - ₹16,000{" "}
+          <i className="note">*Prices may vary</i>
+        </p>
+        <p data-aos="fade-up">
+          6. Child (0-3 Yrs) Complimentary{" "}
+          <i className="note">*Prices may vary</i>
+        </p>
       </div>
     </div>
   );

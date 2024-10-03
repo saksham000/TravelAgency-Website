@@ -179,8 +179,8 @@ root {
     gap: 2rem;
   }
   .Home .popularPlaces .content .images img {
-    height: 100%;
-    width: 210px;
+    height: 160px; /* Set a fixed height */
+    width: 230px;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 10px;
