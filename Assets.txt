@@ -1,6 +1,0 @@
-📂Assets 
-Icons: https://react-icons.github.io/react-icons/
-Fonts: https://fonts.google.com/
-Animation: https://github.com/michalsnik/aos
-Videos: https://pixabay.com/videos/
-Images: https://www.pexels.com/

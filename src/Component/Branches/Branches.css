@@ -29,9 +29,8 @@
   align-items: center;
   gap: 20px;
   padding: 20px;
-  border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #faf0e6;
+  background-color: #ffffff;
 }
 @media (max-width: 768px) {
   .branch {

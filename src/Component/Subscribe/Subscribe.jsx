@@ -3,6 +3,7 @@ import "./Subscribe.css";
 import aboutus from "../../Assets/about-us.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 function Subscribe() {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -26,11 +27,11 @@ function Subscribe() {
             and beyond. Let us guide you on your next adventure with the best
             services available.
           </p>
-          <a href="/contact">
-            <button className="btn" data-aos="fade-up">
-              Start Here !
-            </button>
+          <Link to="/contact">
+          <a className="btn" href="/contact" data-aos="fade-up">
+            Start Here !
           </a>
+          </Link>
         </div>
       </div>
     </div>

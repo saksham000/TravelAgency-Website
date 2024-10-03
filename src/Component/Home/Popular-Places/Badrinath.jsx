@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Popular-Places.css";
 import bg1 from "../../../Assets/popularplaces/Badrinath/1.jpg";
-import bg2 from "../../../Assets/popularplaces/Badrinath/2.jpg";
+import bg2 from "../../../Assets/popularplaces/Badrinath/2.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 function Badrinath() {

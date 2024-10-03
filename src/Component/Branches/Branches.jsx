@@ -32,7 +32,7 @@ function Branches() {
                 <h3 data-aos="fade-up">Contact Us At</h3>
                 <ul>
                   <li data-aos="fade-up">
-                    <FaPhone /> 9319028166
+                    <FaPhone /> 9319028166, 7417960990
                   </li>
                   <li data-aos="fade-up">
                     <GrMail /> shrihariomyatra@gmail.com

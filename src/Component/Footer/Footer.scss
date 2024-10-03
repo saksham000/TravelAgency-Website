@@ -1,4 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Anybody:ital,wght@0,100..900;1,100..900&family=Arbutus+Slab&display=swap");
+
+root {
+  --primaryColor: #8fbc8f;
+  --primaryColorLight: hsl(14, 96%, 91%);
+  // --bgColor: #fdf5e6;
+  --bgColor: #ffffff;
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, -12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+
+  /* Font ang Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+
+  // Imported from another project
+
+  --color-primary: #66cdaa;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-variant: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.7);
+  --color-black: #000;
+  --color-bg: #1f2641;
+  --color-bg1: #8fbc8f;
+  --footer-color: #f4a460;
+  // f4a460
+  --color-bg2: #424890;
+
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+  --transition: all 400ms ease;
+}
+
 footer {
   background: var(--footer-color);
   padding-top: 5rem;
@@ -45,6 +90,11 @@ footer ul li a:hover {
 
 .footer4 h4 {
   font-size: 1.2rem; /* Increased font size for footer4 header */
+}
+
+.footer1 h4{
+  text-decoration: none;
+  color: var(--blackColor);
 }
 
 .footer4 p {

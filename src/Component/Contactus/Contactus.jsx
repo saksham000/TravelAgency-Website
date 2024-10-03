@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Contactus.css";
-import image1 from "../../Assets/image1.jpg";
+import image1 from "../../Assets/support2.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
@@ -83,25 +83,28 @@ function Contactus() {
         <div className="contactContainer">
           <aside className="contactAside">
             <div className="asideImg">
-              <img src={image1} alt="Principal" />
+              <img src={image1} alt="Image" />
             </div>
             <h2>Contact Us</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              tempore.
+              We're Here for You—Reach Out to Our Support Team Anytime for
+              Assistance!
             </p>
             <ul className="contactDetails">
               <li>
                 <FaPhone />
-                <h5>982914559</h5>
+                <h5>9319028166, 7417960990</h5>
               </li>
               <li>
                 <GrMail />
-                <h5>hello@gmail.com</h5>
+                <h5>shrihariomyatra@gmail.com</h5>
               </li>
               <li>
                 <SiGooglemaps />
-                <a target="_blank" href="https://www.google.com/maps">
+                <a
+                  target="_blank"
+                  href="https://www.google.com/maps?q=29.9470545,78.1570162"
+                >
                   Click Here !
                 </a>
               </li>
@@ -113,15 +116,15 @@ function Contactus() {
                 </a>
               </li>
               <li>
-                <a href="https://instagram.com">
+                <a href="https://www.instagram.com/shrihariomyatra/profilecard/?igsh=MXUxYWYyZXN4dDZ6bg==">
                   <FaInstagram />
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="https://twitter.com">
                   <RiTwitterXLine />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </aside>
 

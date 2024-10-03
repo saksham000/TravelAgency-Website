@@ -105,8 +105,7 @@ const Questions = () => {
           <div className="secHeading" data-aos="fade-up">
             <h4 data-aos="fade-up">Do you have any specific question ?</h4>
             <p data-aos="fade-up">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-              saepe?
+            Got a Question? We're Here to Help !
             </p>
           </div>
           <div className="formContent grid" data-aos="fade-up">

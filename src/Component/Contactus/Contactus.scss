@@ -28,6 +28,10 @@ section {
   margin-bottom: 2rem;
 }
 
+.asideImg img{
+  border-radius: 1rem;
+}
+
 .contactAside h2 {
   text-align: left;
   margin-bottom: 1rem;
@@ -311,6 +315,66 @@ textarea {
   .contactSocial a {
     font-size: 0.7rem;
     padding: 0.3rem;
+  }
+
+  .contactForm {
+    gap: 0.8rem;
+  }
+
+  input,
+  textarea {
+    padding: 0.8rem;
+    color: var(--blackColor);
+  }
+
+  .button-86 {
+    width: 90px;
+    height: 28px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 479px) {
+  section {
+    margin-top: 10%;
+  }
+
+  .contactContainer {
+    padding: 1.6rem;
+    gap: 1.5rem;
+  }
+
+  .contactAside {
+    padding: 1.5rem;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .asideImg {
+    width: 7rem;
+  }
+  .asideImg img {
+    width: 11rem;
+    margin-left: 3.8rem;
+  }
+
+  .contactAside h2 {
+    font-size: 1.3rem;
+  }
+
+  .contactAside p {
+    font-size: 1rem;
+  }
+
+  .contactDetails li {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .contactSocial a {
+    font-size: 0.7rem;
+    padding: 0.4rem;
   }
 
   .contactForm {

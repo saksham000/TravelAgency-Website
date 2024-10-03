@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import "./Reviews.css";
-import image1 from "../../Assets/image1.jpg";
+import user1 from "../../Assets/testimonial/1.jpg";
+import user2 from "../../Assets/testimonial/2.jpg";
+import user3 from "../../Assets/testimonial/3.jpg";
+import user4 from "../../Assets/testimonial/4.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -41,18 +44,18 @@ function Reviews() {
             <SwiperSlide>
               <article class="testimonial swiper-slide">
                 <div class="avatar">
-                  <img src={image1} data-aos="fade-down" />
+                  <img src={user4} data-aos="fade-down" />
                 </div>
                 <div class="testimonialInfo">
-                  <h5 data-aos="fade-up">User Name</h5>
-                  <small data-aos="fade-up">student</small>
+                  <h5 data-aos="fade-up">Priya Shukla</h5>
+                  <small data-aos="fade-up">Delhi</small>
                 </div>
                 <div class="testimonialBody">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt voluptatum eaque, sequi deleniti voluptate quidem minus
-                    suscipit impedit cumque cupiditate laudantium maiores
-                    tempore veniam ea dolore, vel ab velit repellat?
+                    I recently completed the Char Dham Yatra with this travel
+                    agency, and it was an incredible experience! From the scenic
+                    drive to Barkot and the stunning Kempty Falls to the
+                    spiritual trek to Yamunotri, every moment was unforgettable.
                   </p>
                 </div>
               </article>
@@ -60,18 +63,19 @@ function Reviews() {
             <SwiperSlide>
               <article class="testimonial swiper-slide">
                 <div class="avatar">
-                  <img src={image1} data-aos="fade-down" />
+                  <img src={user3} data-aos="fade-down" />
                 </div>
                 <div class="testimonialInfo">
-                  <h5>User Name</h5>
-                  <small>student</small>
+                  <h5>Raj Yadav</h5>
+                  <small>Up</small>
                 </div>
                 <div class="testimonialBody">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt voluptatum eaque, sequi deleniti voluptate quidem minus
-                    suscipit impedit cumque cupiditate laudantium maiores
-                    tempore veniam ea dolore, vel ab velit repellat?
+                    I just returned from the Char Dham Yatra organized by this
+                    travel agency, and it was truly a life-changing experience!
+                    Every aspect of the trip was well-organized, from the
+                    breathtaking views during our drive to Barkot to the
+                    beautiful temples we visited.
                   </p>
                 </div>
               </article>
@@ -79,18 +83,19 @@ function Reviews() {
             <SwiperSlide>
               <article class="testimonial swiper-slide">
                 <div class="avatar">
-                  <img src={image1} data-aos="fade-down" />
+                  <img src={user2} data-aos="fade-down" />
                 </div>
                 <div class="testimonialInfo">
-                  <h5>User Name</h5>
-                  <small>student</small>
+                  <h5>Anita Rana</h5>
+                  <small>Punjab</small>
                 </div>
                 <div class="testimonialBody">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt voluptatum eaque, sequi deleniti voluptate quidem minus
-                    suscipit impedit cumque cupiditate laudantium maiores
-                    tempore veniam ea dolore, vel ab velit repellat?
+                    I recently completed the Do Dham Yatra with this travel
+                    agency, and it was an unforgettable spiritual journey! The
+                    itinerary was perfectly planned, allowing us to explore
+                    beautiful locations like Haridwar, Guptkashi, Kedarnath, and
+                    Badrinath.
                   </p>
                 </div>
               </article>
@@ -98,18 +103,19 @@ function Reviews() {
             <SwiperSlide>
               <article class="testimonial swiper-slide">
                 <div class="avatar">
-                  <img src={image1} data-aos="fade-down" />
+                  <img src={user1} data-aos="fade-down" />
                 </div>
                 <div class="testimonialInfo">
-                  <h5>User Name</h5>
-                  <small>student</small>
+                  <h5>Rajesh Kumar</h5>
+                  <small>Haryana</small>
                 </div>
                 <div class="testimonialBody">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sunt voluptatum eaque, sequi deleniti voluptate quidem minus
-                    suscipit impedit cumque cupiditate laudantium maiores
-                    tempore veniam ea dolore, vel ab velit repellat?
+                    I just finished the Do Dham Yatra organized by this
+                    fantastic travel agency, and it was truly a remarkable
+                    experience! From our arrival in Haridwar to our visits to
+                    Kedarnath and Badrinath, every moment was filled with
+                    spiritual significance and breathtaking beauty.
                   </p>
                 </div>
               </article>

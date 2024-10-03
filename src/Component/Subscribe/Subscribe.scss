@@ -58,9 +58,9 @@ root {
     .subscribe {
         .secContainer {
             img {
-                max-width: 75%;
+                max-width: 76%;
                 margin: auto;
-                height: 30rem;
+                height: 27rem;
                 width: 20rem;
             }
             .textDiv {
@@ -68,6 +68,7 @@ root {
                     font-size: 1.5rem;
                 }
                 p {
+                    margin-left: -1.6rem;
                     padding: 1rem 0;
                     font-size: var(--h3FontSize);
                 }
@@ -111,6 +112,30 @@ root {
                 p {
                     padding: 2rem;
                     font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 479px) {
+    .subscribe {
+        .secContainer {
+            img {
+                max-width: 90%;
+                margin: auto;
+                height: 26rem;
+            }
+            .textDiv {
+                p {
+                    font-size: 1.1rem;
+                    margin-bottom: 0.5rem;
+                }
+                .btn {
+                    width: 10rem;
+                    padding: 0.5rem 2rem;
+                    font-size: var(--h2FontSize);
+                    margin-top: 0.5rem;
                 }
             }
         }

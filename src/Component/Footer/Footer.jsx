@@ -6,6 +6,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { GrMail } from "react-icons/gr";
+import { Link } from "react-router-dom";
 
 function Footer() {
   useEffect(() => {
@@ -20,8 +21,8 @@ function Footer() {
               <h4 data-aos="fade-up">Shri Hari Om Yatra</h4>
             </a>
             <p data-aos="fade-up">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequuntur, natus.
+              Explore the world with us—your dream destination is just a click
+              away!
             </p>
           </div>
 
@@ -32,7 +33,7 @@ function Footer() {
                 <a href="/">Home</a>
               </li>
               <li data-aos="fade-up">
-                <a href="./contact">Contact US</a>
+                <Link to="/contact">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -54,8 +55,8 @@ function Footer() {
           <div className="footer4">
             <h4 data-aos="fade-up">Contact Us</h4>
             <div>
-              <p data-aos="fade-up">8360132497</p>
-              <p data-aos="fade-up">xyz@gmail.com</p>
+              <p data-aos="fade-up">9319028166</p>
+              <p data-aos="fade-up">shrihariomyatra@gmail.com</p>
             </div>
 
             <ul className="footerSocials">
@@ -70,15 +71,18 @@ function Footer() {
                 </a>
               </li>
               <li data-aos="fade-up">
-                <a href="#">
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/shrihariomyatra/profilecard/?igsh=MXUxYWYyZXN4dDZ6bg=="
+                >
                   <AiFillInstagram className="icon" />
                 </a>
               </li>
-              <li data-aos="fade-up">
+              {/* <li data-aos="fade-up">
                 <a href="#">
                   <ImTwitter className="icon" />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

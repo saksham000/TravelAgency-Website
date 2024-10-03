@@ -1,0 +1,7 @@
+//  1. creame color ko hatana hai branches mai
+2. testimonial add krne hai
+// contact us mai improvement krni hai
+//3. footer improve krna hai
+//4. aboutus mai start here button ka link broken hai and image streched hai
+//5. badrinath mai pp mai logo hatana hai
+//6. have a question mai lorem hatana hai.
