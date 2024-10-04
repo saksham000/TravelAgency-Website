@@ -45,7 +45,7 @@ function Destinations() {
       <div className="secContainer">
         <a
           class="fixed-tel"
-          href="tel:+91 8360132497"
+          href="tel:+91 9319028166"
           target="_blank"
           title="Call Now"
         >

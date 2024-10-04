@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Branches.css";
-import image1 from "../../Assets/image1.jpg";
+import image1 from "../../Assets/branch.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { SiGooglemaps } from "react-icons/si";

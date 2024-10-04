@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./Reviews.css";
-import user1 from "../../Assets/testimonial/1.jpg";
-import user2 from "../../Assets/testimonial/2.jpg";
-import user3 from "../../Assets/testimonial/3.jpg";
-import user4 from "../../Assets/testimonial/4.jpg";
+import user1 from "../../Assets/testimonial/1.jpeg";
+import user2 from "../../Assets/testimonial/2.jpeg";
+import user3 from "../../Assets/testimonial/3.jpeg";
+import user4 from "../../Assets/testimonial/4.jpeg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -47,8 +47,8 @@ function Reviews() {
                   <img src={user4} data-aos="fade-down" />
                 </div>
                 <div class="testimonialInfo">
-                  <h5 data-aos="fade-up">Priya Shukla</h5>
-                  <small data-aos="fade-up">Delhi</small>
+                  <h5 data-aos="fade-up">Lakshmi</h5>
+                  <small data-aos="fade-up">Bengal</small>
                 </div>
                 <div class="testimonialBody">
                   <p>
@@ -66,8 +66,8 @@ function Reviews() {
                   <img src={user3} data-aos="fade-down" />
                 </div>
                 <div class="testimonialInfo">
-                  <h5>Raj Yadav</h5>
-                  <small>Up</small>
+                  <h5>Adhiyamaan</h5>
+                  <small>Chennai</small>
                 </div>
                 <div class="testimonialBody">
                   <p>
@@ -86,8 +86,8 @@ function Reviews() {
                   <img src={user2} data-aos="fade-down" />
                 </div>
                 <div class="testimonialInfo">
-                  <h5>Anita Rana</h5>
-                  <small>Punjab</small>
+                  <h5>Adithan</h5>
+                  <small>Kerla</small>
                 </div>
                 <div class="testimonialBody">
                   <p>
@@ -107,7 +107,7 @@ function Reviews() {
                 </div>
                 <div class="testimonialInfo">
                   <h5>Rajesh Kumar</h5>
-                  <small>Haryana</small>
+                  <small>Gujrat</small>
                 </div>
                 <div class="testimonialBody">
                   <p>

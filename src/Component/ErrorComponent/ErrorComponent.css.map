@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"ErrorComponent.css"}
+{"version":3,"sources":["ErrorComponent.scss","ErrorComponent.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,aAAA;EACA,qDAAA;ACCJ;ADCI;EACE,kBAAA;EACA,WAAA;EACA,8BAAA;EACA,aAAA;EACA,mBAAA;EACA,yCAAA;ACCN;ADCM;EACE,iBAAA;EACA,mBAAA;ACCR;ADEM;EACE,iBAAA;EACA,mBAAA;ACAR;ADGM;EACE,qBAAA;EACA,sBAAA;EACA,eAAA;EACA,cAAA;EACA,sBAAA;EACA,YAAA;EACA,kBAAA;EACA,qBAAA;EACA,yBAAA;ACDR;ADGQ;EACE,yBAAA;EACA,WAAA;ACDV","file":"ErrorComponent.css"}

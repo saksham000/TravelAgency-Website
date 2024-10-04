@@ -11,15 +11,15 @@ function Middle() {
       <div className="secContainer container">
         <div className="grid" data-aos="fade-up">
           <span className="flex" data-aos="fade-up">
-            <h1>10</h1>
-            <p>World Of Experiences</p>
+            <h1>24/7</h1>
+            <p>Customer Support</p>
           </span>
           <span className="flex" data-aos="fade-up">
-            <h1>2K+</h1>
+            <h1>200+</h1>
             <p>Fine Destinations</p>
           </span>
           <span className="flex" data-aos="fade-up">
-            <h1>2K+</h1>
+            <h1>1K+</h1>
             <p>Customer Reviews</p>
           </span>
           <span className="flex" data-aos="fade-up">
