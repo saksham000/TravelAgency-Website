@@ -55,8 +55,16 @@ function Footer() {
           <div className="footer4">
             <h4 data-aos="fade-up">Contact Us</h4>
             <div>
-              <p data-aos="fade-up">9319028166</p>
-              <p data-aos="fade-up">shrihariomyatra@gmail.com</p>
+              <p data-aos="fade-up">9411149796</p>
+              <p data-aos="fade-up">
+                <a
+                  href="mailto:shrihariomyatra@gmail.com"
+                  className="mailto"
+                  target="_blank"
+                >
+                  shrihariomyatra@gmail.com
+                </a>
+              </p>
             </div>
 
             <ul className="footerSocials">
@@ -66,7 +74,7 @@ function Footer() {
                 </a>
               </li>
               <li data-aos="fade-up">
-                <a href="#">
+                <a href="mailto:shrihariomyatra@gmail.com">
                   <GrMail className="icon" />
                 </a>
               </li>

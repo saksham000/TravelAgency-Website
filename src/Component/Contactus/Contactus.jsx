@@ -93,7 +93,7 @@ function Contactus() {
             <ul className="contactDetails">
               <li>
                 <FaPhone />
-                <h5>9319028166, 7417960990</h5>
+                <h5>9411149796, 7310670362, 9319028166</h5>
               </li>
               <li>
                 <GrMail />
@@ -131,7 +131,7 @@ function Contactus() {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            action="https://formspree.io/f/maygyzre"
+            action="https://formspree.io/f/xgvewolp"
             method="POST"
             className="contactForm"
           >

@@ -59,6 +59,11 @@ footer {
   font-size: 1rem;
 }
 
+.mailto {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
 footer ul li {
   margin-bottom: 0.9rem;
   font-size: 1rem;

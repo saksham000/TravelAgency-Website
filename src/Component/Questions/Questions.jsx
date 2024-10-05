@@ -112,7 +112,7 @@ const Questions = () => {
             <form
               ref={formRef}
               onSubmit={handleSubmit}
-              action="https://formspree.io/f/maygyzre"
+              action="https://formspree.io/f/xgvewolp"
               method="POST"
             >
               <input

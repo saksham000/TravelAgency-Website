@@ -17,6 +17,7 @@ import bg7 from "../../Assets/itinerary/7.jpg";
 import bg8 from "../../Assets/itinerary/8.jpg";
 import bg9 from "../../Assets/itinerary/9.jpg";
 import bg10 from "../../Assets/itinerary/10.jpg";
+import { Link } from "react-router-dom";
 
 function DooDham() {
   useEffect(() => {
@@ -252,6 +253,11 @@ function DooDham() {
           6. Child (0-3 Yrs) Complimentary{" "}
           <i className="note">*Prices may vary</i>
         </p>
+        <Link to="/contact">
+          <a className="btn" href="/contact" data-aos="fade-up">
+            Contact Us !
+          </a>
+        </Link>
       </div>
     </div>
   );
