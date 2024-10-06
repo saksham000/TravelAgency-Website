@@ -64,7 +64,7 @@ function Portfolio() {
           </div>
         </div>
         <div className="rightContent" data-aos="fade-down">
-          <img src={image1} alt="/Icon Image" />
+          <img src={image1} alt="Icon Image" />
         </div>
       </div>
     </div>

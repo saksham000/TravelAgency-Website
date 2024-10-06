@@ -74,7 +74,7 @@ const Questions = () => {
         {/* <h3 data-aos="fade-up">Frequently asked questions</h3> */}
       </div>
       <div className="secContainer grid">
-        <img src={image1} data-aos="fade-down" className="icon" />
+        <img src={image1} alt="image" data-aos="fade-down" className="icon" />
         {/* <div className="accordion grid" data-aos="fade-up">
           <Accordion
             title="What is the best time to book my trip to get the lowest prices?"

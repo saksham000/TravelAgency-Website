@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./Reviews.css";
-import user1 from "../../Assets/testimonial/1.jpeg";
-import user2 from "../../Assets/testimonial/2.jpeg";
-import user3 from "../../Assets/testimonial/3.jpeg";
-import user4 from "../../Assets/testimonial/4.jpeg";
+import user1 from "../../Assets/testimonial/1.jpg";
+import user2 from "../../Assets/testimonial/2.jpg";
+import user3 from "../../Assets/testimonial/3.jpg";
+import user4 from "../../Assets/testimonial/4.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -44,11 +44,11 @@ function Reviews() {
             <SwiperSlide>
               <article class="testimonial swiper-slide">
                 <div class="avatar">
-                  <img src={user4} data-aos="fade-down" />
+                  <img src={user4} alt="image" data-aos="fade-down" />
                 </div>
                 <div class="testimonialInfo">
-                  <h5 data-aos="fade-up">Lakshmi</h5>
-                  <small data-aos="fade-up">Bengal</small>
+                  <h5 data-aos="fade-up">Yash</h5>
+                  <small data-aos="fade-up">Kanpur</small>
                 </div>
                 <div class="testimonialBody">
                   <p>
@@ -63,11 +63,11 @@ function Reviews() {
             <SwiperSlide>
               <article class="testimonial swiper-slide">
                 <div class="avatar">
-                  <img src={user3} data-aos="fade-down" />
+                  <img src={user3} alt="image" data-aos="fade-down" />
                 </div>
                 <div class="testimonialInfo">
-                  <h5>Adhiyamaan</h5>
-                  <small>Chennai</small>
+                  <h5>Ritish Rohela</h5>
+                  <small>Haridwar</small>
                 </div>
                 <div class="testimonialBody">
                   <p>
@@ -83,11 +83,11 @@ function Reviews() {
             <SwiperSlide>
               <article class="testimonial swiper-slide">
                 <div class="avatar">
-                  <img src={user2} data-aos="fade-down" />
+                  <img src={user2} alt="image" data-aos="fade-down" />
                 </div>
                 <div class="testimonialInfo">
-                  <h5>Adithan</h5>
-                  <small>Kerla</small>
+                  <h5>Aviral</h5>
+                  <small>Gujarat </small>
                 </div>
                 <div class="testimonialBody">
                   <p>
@@ -103,11 +103,11 @@ function Reviews() {
             <SwiperSlide>
               <article class="testimonial swiper-slide">
                 <div class="avatar">
-                  <img src={user1} data-aos="fade-down" />
+                  <img src={user1} alt="image" data-aos="fade-down" />
                 </div>
                 <div class="testimonialInfo">
-                  <h5>Rajesh Kumar</h5>
-                  <small>Gujrat</small>
+                  <h5>Aakash</h5>
+                  <small>Ujjain</small>
                 </div>
                 <div class="testimonialBody">
                   <p>
