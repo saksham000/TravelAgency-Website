@@ -105,6 +105,16 @@ footer ul li a:hover {
   font-weight: 500;
 }
 
+.developerLink {
+  position: absolute;
+  margin-left: 7rem;
+  margin-top: 2.5rem;
+}
+
+.developerLink a {
+  color: rgb(39, 111, 39);
+}
+
 @media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
@@ -119,5 +129,12 @@ footer ul li a:hover {
   }
   .footerSocials {
     justify-content: center;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 599px) {
+  .developerLink {
+    position: static; /* Remove absolute positioning */
+    margin: 1rem 0 0 0; /* Adjust margin for better spacing */
+    text-align: center; /* Center the link */
   }
 }/*# sourceMappingURL=Footer.css.map */

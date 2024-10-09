@@ -86,12 +86,23 @@ function Footer() {
                   <AiFillInstagram className="icon" />
                 </a>
               </li>
+
               {/* <li data-aos="fade-up">
                 <a href="#">
                   <ImTwitter className="icon" />
                 </a>
               </li> */}
             </ul>
+
+            <p className="developerLink">
+              Developed with ♥ By{" "}
+              <a
+                target="_blank"
+                href="https://saksham-portfolio-web.netlify.app"
+              >
+                Saksham
+              </a>
+            </p>
           </div>
         </div>
         <div className="footerCopyright">

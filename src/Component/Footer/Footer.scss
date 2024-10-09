@@ -67,7 +67,7 @@ footer {
   font-size: 1rem;
 }
 
-.mailto{
+.mailto {
   text-decoration: none;
   color: var(--color-black);
 }
@@ -97,7 +97,7 @@ footer ul li a:hover {
   font-size: 1.2rem; /* Increased font size for footer4 header */
 }
 
-.footer1 h4{
+.footer1 h4 {
   text-decoration: none;
   color: var(--blackColor);
 }
@@ -113,6 +113,14 @@ footer ul li a:hover {
   border-top: 1px solid var(--blackColor);
   font-size: 1rem;
   font-weight: 500;
+}
+.developerLink {
+  position: absolute;
+  margin-left: 7rem;
+  margin-top: 2.5rem;
+}
+.developerLink a {
+  color: rgb(39, 111, 39);
 }
 
 @media screen and (max-width: 600px) {
@@ -131,5 +139,14 @@ footer ul li a:hover {
 
   .footerSocials {
     justify-content: center;
+  }
+}
+
+//mobile
+@media screen and (min-width: 390px) and (max-width: 599px) {
+  .developerLink {
+    position: static; /* Remove absolute positioning */
+    margin: 1rem 0 0 0; /* Adjust margin for better spacing */
+    text-align: center; /* Center the link */
   }
 }
